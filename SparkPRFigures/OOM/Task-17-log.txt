@@ -1,0 +1,793 @@
+17/10/11 20:47:34 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 3311@slave2
+17/10/11 20:47:34 INFO SignalUtils: Registered signal handler for TERM
+17/10/11 20:47:34 INFO SignalUtils: Registered signal handler for HUP
+17/10/11 20:47:34 INFO SignalUtils: Registered signal handler for INT
+17/10/11 20:47:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/10/11 20:47:34 INFO SecurityManager: Changing view acls to: root
+17/10/11 20:47:34 INFO SecurityManager: Changing modify acls to: root
+17/10/11 20:47:34 INFO SecurityManager: Changing view acls groups to: 
+17/10/11 20:47:34 INFO SecurityManager: Changing modify acls groups to: 
+17/10/11 20:47:34 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+17/10/11 20:47:35 INFO TransportClientFactory: Successfully created connection to /172.26.80.234:38372 after 65 ms (0 ms spent in bootstraps)
+17/10/11 20:47:35 INFO SecurityManager: Changing view acls to: root
+17/10/11 20:47:35 INFO SecurityManager: Changing modify acls to: root
+17/10/11 20:47:35 INFO SecurityManager: Changing view acls groups to: 
+17/10/11 20:47:35 INFO SecurityManager: Changing modify acls groups to: 
+17/10/11 20:47:35 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+17/10/11 20:47:35 INFO TransportClientFactory: Successfully created connection to /172.26.80.234:38372 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:47:35 INFO DiskBlockManager: Created local directory at /dataDisk/spark-2.1.4.19-bin-2.7.1/shuffletmp/spark-d0e85582-f145-4ffb-a2c3-ee74b6e7bfa7/executor-b2566125-63dd-47c6-9025-c8fb3c86722a/blockmgr-472fd1c5-5648-486b-976f-1460bddf7aee
+17/10/11 20:47:35 DEBUG DiskBlockManager: Adding shutdown hook
+17/10/11 20:47:35 INFO MemoryStore: MemoryStore started with capacity 3.6 GB
+17/10/11 20:47:35 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@172.26.80.234:38372
+17/10/11 20:47:36 INFO WorkerWatcher: Connecting to worker spark://Worker@172.26.80.232:7078
+17/10/11 20:47:36 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+17/10/11 20:47:36 INFO Executor: Starting executor ID 29 on host 172.26.80.232
+17/10/11 20:47:36 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38363.
+17/10/11 20:47:36 INFO NettyBlockTransferService: Server created on 172.26.80.232:38363
+17/10/11 20:47:36 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/10/11 20:47:36 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(29, 172.26.80.232, 38363, None)
+17/10/11 20:47:36 INFO TransportClientFactory: Successfully created connection to /172.26.80.232:7078 after 6 ms (0 ms spent in bootstraps)
+17/10/11 20:47:36 INFO WorkerWatcher: Successfully connected to spark://Worker@172.26.80.232:7078
+17/10/11 20:47:36 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(29, 172.26.80.232, 38363, None)
+17/10/11 20:47:36 INFO BlockManager: Initialized BlockManager: BlockManagerId(29, 172.26.80.232, 38363, None)
+17/10/11 20:47:36 INFO CoarseGrainedExecutorBackend: Got assigned task 18
+17/10/11 20:47:36 INFO Executor: Running task 18.0 in stage 0.0 (TID 18)
+17/10/11 20:47:36 INFO Executor: Fetching spark://172.26.80.234:38372/jars/SparkGC.jar with timestamp 1507726052765
+17/10/11 20:47:36 INFO TransportClientFactory: Successfully created connection to /172.26.80.234:38372 after 38 ms (0 ms spent in bootstraps)
+17/10/11 20:47:36 INFO Utils: Fetching spark://172.26.80.234:38372/jars/SparkGC.jar to /dataDisk/spark-2.1.4.19-bin-2.7.1/shuffletmp/spark-d0e85582-f145-4ffb-a2c3-ee74b6e7bfa7/executor-b2566125-63dd-47c6-9025-c8fb3c86722a/spark-bf3ee4a1-a69d-4eb5-8c68-f7a82550e7f8/fetchFileTemp6255918050365613457.tmp
+17/10/11 20:47:36 INFO Utils: Copying /dataDisk/spark-2.1.4.19-bin-2.7.1/shuffletmp/spark-d0e85582-f145-4ffb-a2c3-ee74b6e7bfa7/executor-b2566125-63dd-47c6-9025-c8fb3c86722a/spark-bf3ee4a1-a69d-4eb5-8c68-f7a82550e7f8/-9176103611507726052765_cache to /dataDisk/spark-2.1.4.19-bin-2.7.1/worker/app-20171011204732-0000/29/./SparkGC.jar
+17/10/11 20:47:36 INFO Executor: Adding file:/dataDisk/spark-2.1.4.19-bin-2.7.1/worker/app-20171011204732-0000/29/./SparkGC.jar to class loader
+17/10/11 20:47:36 DEBUG BlockManager: Getting local block broadcast_1
+17/10/11 20:47:36 DEBUG BlockManager: Block broadcast_1 was not found
+17/10/11 20:47:36 INFO TorrentBroadcast: Started reading broadcast variable 1
+17/10/11 20:47:36 DEBUG BlockManager: Getting local block broadcast_1_piece0 as bytes
+17/10/11 20:47:36 DEBUG BlockManager: Getting remote block broadcast_1_piece0
+17/10/11 20:47:36 DEBUG BlockManager: Getting remote block broadcast_1_piece0 from BlockManagerId(driver, 172.26.80.234, 38787, None)
+17/10/11 20:47:36 INFO TransportClientFactory: Successfully created connection to /172.26.80.234:38787 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:47:36 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.8 KB, free 3.6 GB)
+17/10/11 20:47:36 DEBUG BlockManagerMaster: Updated info of block broadcast_1_piece0
+17/10/11 20:47:36 DEBUG BlockManager: Told master about block broadcast_1_piece0
+17/10/11 20:47:36 DEBUG BlockManager: Put block broadcast_1_piece0 locally took  20 ms
+17/10/11 20:47:36 DEBUG BlockManager: Putting block broadcast_1_piece0 without replication took  22 ms
+17/10/11 20:47:36 INFO TorrentBroadcast: Reading broadcast variable 1 took 217 ms
+17/10/11 20:47:36 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 5.2 KB, free 3.6 GB)
+17/10/11 20:47:36 DEBUG BlockManager: Put block broadcast_1 locally took  115 ms
+17/10/11 20:47:36 DEBUG BlockManager: Putting block broadcast_1 without replication took  116 ms
+17/10/11 20:47:37 INFO HadoopRDD: Input split: hdfs://master:9000/usr/lijie/data/sql/Rankings-1GB-UserVisits-2GB/uservisits/UserVisits.dat1:268435456+134217728
+17/10/11 20:47:37 DEBUG BlockManager: Getting local block broadcast_0
+17/10/11 20:47:37 DEBUG BlockManager: Block broadcast_0 was not found
+17/10/11 20:47:37 INFO TorrentBroadcast: Started reading broadcast variable 0
+17/10/11 20:47:37 DEBUG BlockManager: Getting local block broadcast_0_piece0 as bytes
+17/10/11 20:47:37 DEBUG BlockManager: Getting remote block broadcast_0_piece0
+17/10/11 20:47:37 DEBUG BlockManager: Getting remote block broadcast_0_piece0 from BlockManagerId(19, 172.26.80.236, 39398, None)
+17/10/11 20:47:37 INFO TransportClientFactory: Successfully created connection to /172.26.80.236:39398 after 0 ms (0 ms spent in bootstraps)
+17/10/11 20:47:37 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.6 KB, free 3.6 GB)
+17/10/11 20:47:37 DEBUG BlockManagerMaster: Updated info of block broadcast_0_piece0
+17/10/11 20:47:37 DEBUG BlockManager: Told master about block broadcast_0_piece0
+17/10/11 20:47:37 DEBUG BlockManager: Put block broadcast_0_piece0 locally took  18 ms
+17/10/11 20:47:37 DEBUG BlockManager: Putting block broadcast_0_piece0 without replication took  19 ms
+17/10/11 20:47:37 INFO TorrentBroadcast: Reading broadcast variable 0 took 30 ms
+17/10/11 20:47:37 DEBUG BlockManager: Getting local block broadcast_0_piece0 as bytes
+17/10/11 20:47:37 DEBUG BlockManager: Level for block broadcast_0_piece0 is StorageLevel(disk, memory, 1 replicas)
+17/10/11 20:47:37 DEBUG BlockManager: Getting local block broadcast_0_piece0 as bytes
+17/10/11 20:47:37 DEBUG BlockManager: Level for block broadcast_0_piece0 is StorageLevel(disk, memory, 1 replicas)
+17/10/11 20:47:37 DEBUG BlockManager: Getting local block broadcast_0_piece0 as bytes
+17/10/11 20:47:37 DEBUG BlockManager: Level for block broadcast_0_piece0 is StorageLevel(disk, memory, 1 replicas)
+17/10/11 20:47:37 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 317.9 KB, free 3.6 GB)
+17/10/11 20:47:37 DEBUG BlockManager: Put block broadcast_0 locally took  85 ms
+17/10/11 20:47:37 DEBUG BlockManager: Putting block broadcast_0 without replication took  85 ms
+17/10/11 20:47:38 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+17/10/11 20:47:38 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+17/10/11 20:47:38 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+17/10/11 20:47:38 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+17/10/11 20:47:38 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+17/10/11 20:47:56 INFO Executor: Finished task 18.0 in stage 0.0 (TID 18). 2521 bytes result sent to driver
+17/10/11 20:47:56 INFO CoarseGrainedExecutorBackend: Got assigned task 58
+17/10/11 20:47:56 INFO Executor: Running task 58.0 in stage 0.0 (TID 58)
+17/10/11 20:47:56 DEBUG BlockManager: Getting local block broadcast_1
+17/10/11 20:47:56 DEBUG BlockManager: Level for block broadcast_1 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/10/11 20:47:56 INFO HadoopRDD: Input split: hdfs://master:9000/usr/lijie/data/sql/Rankings-1GB-UserVisits-2GB/uservisits/UserVisits.dat3:1342177280+134217728
+17/10/11 20:47:56 DEBUG BlockManager: Getting local block broadcast_0
+17/10/11 20:47:56 DEBUG BlockManager: Level for block broadcast_0 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/10/11 20:48:08 INFO Executor: Finished task 58.0 in stage 0.0 (TID 58). 1513 bytes result sent to driver
+17/10/11 20:48:08 INFO CoarseGrainedExecutorBackend: Got assigned task 88
+17/10/11 20:48:08 INFO Executor: Running task 88.0 in stage 0.0 (TID 88)
+17/10/11 20:48:08 DEBUG BlockManager: Getting local block broadcast_1
+17/10/11 20:48:08 DEBUG BlockManager: Level for block broadcast_1 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/10/11 20:48:08 INFO HadoopRDD: Input split: hdfs://master:9000/usr/lijie/data/sql/Rankings-1GB-UserVisits-2GB/uservisits/UserVisits.dat5:1073741824+134217728
+17/10/11 20:48:08 DEBUG BlockManager: Getting local block broadcast_0
+17/10/11 20:48:08 DEBUG BlockManager: Level for block broadcast_0 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/10/11 20:48:21 INFO Executor: Finished task 88.0 in stage 0.0 (TID 88). 1513 bytes result sent to driver
+17/10/11 20:48:21 INFO CoarseGrainedExecutorBackend: Got assigned task 118
+17/10/11 20:48:21 INFO Executor: Running task 118.0 in stage 0.0 (TID 118)
+17/10/11 20:48:21 DEBUG BlockManager: Getting local block broadcast_1
+17/10/11 20:48:21 DEBUG BlockManager: Level for block broadcast_1 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/10/11 20:48:21 INFO HadoopRDD: Input split: hdfs://master:9000/usr/lijie/data/sql/Rankings-1GB-UserVisits-2GB/uservisits/UserVisits.dat7:805306368+134217728
+17/10/11 20:48:21 DEBUG BlockManager: Getting local block broadcast_0
+17/10/11 20:48:21 DEBUG BlockManager: Level for block broadcast_0 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/10/11 20:48:31 INFO Executor: Finished task 118.0 in stage 0.0 (TID 118). 1513 bytes result sent to driver
+17/10/11 20:48:35 INFO CoarseGrainedExecutorBackend: Got assigned task 145
+17/10/11 20:48:35 INFO Executor: Running task 17.0 in stage 1.0 (TID 145)
+17/10/11 20:48:35 INFO MapOutputTrackerWorker: Updating epoch to 1 and clearing cache
+17/10/11 20:48:35 DEBUG BlockManager: Getting local block broadcast_2
+17/10/11 20:48:35 DEBUG BlockManager: Block broadcast_2 was not found
+17/10/11 20:48:35 INFO TorrentBroadcast: Started reading broadcast variable 2
+17/10/11 20:48:35 DEBUG BlockManager: Getting local block broadcast_2_piece0 as bytes
+17/10/11 20:48:35 DEBUG BlockManager: Getting remote block broadcast_2_piece0
+17/10/11 20:48:35 DEBUG BlockManager: Getting remote block broadcast_2_piece0 from BlockManagerId(driver, 172.26.80.234, 38787, None)
+17/10/11 20:48:35 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 27.2 KB, free 3.6 GB)
+17/10/11 20:48:35 DEBUG BlockManagerMaster: Updated info of block broadcast_2_piece0
+17/10/11 20:48:35 DEBUG BlockManager: Told master about block broadcast_2_piece0
+17/10/11 20:48:35 DEBUG BlockManager: Put block broadcast_2_piece0 locally took  3 ms
+17/10/11 20:48:35 DEBUG BlockManager: Putting block broadcast_2_piece0 without replication took  3 ms
+17/10/11 20:48:35 INFO TorrentBroadcast: Reading broadcast variable 2 took 9 ms
+17/10/11 20:48:35 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 73.9 KB, free 3.6 GB)
+17/10/11 20:48:35 DEBUG BlockManager: Put block broadcast_2 locally took  0 ms
+17/10/11 20:48:35 DEBUG BlockManager: Putting block broadcast_2 without replication took  0 ms
+17/10/11 20:48:35 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+17/10/11 20:48:35 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@172.26.80.234:38372)
+17/10/11 20:48:35 INFO MapOutputTrackerWorker: Got the output locations
+17/10/11 20:48:35 INFO ShuffleBlockFetcherIterator: Getting 128 non-empty blocks out of 128 blocks
+17/10/11 20:48:35 INFO TransportClientFactory: Successfully created connection to /172.26.80.233:43060 after 3 ms (0 ms spent in bootstraps)
+17/10/11 20:48:35 INFO TransportClientFactory: Successfully created connection to /172.26.80.235:32864 after 3 ms (0 ms spent in bootstraps)
+17/10/11 20:48:35 INFO TransportClientFactory: Successfully created connection to /172.26.80.237:37031 after 2 ms (0 ms spent in bootstraps)
+17/10/11 20:48:35 INFO TransportClientFactory: Successfully created connection to /172.26.80.237:39437 after 2 ms (0 ms spent in bootstraps)
+17/10/11 20:48:35 INFO ShuffleBlockFetcherIterator: Started 4 remote fetches in 49 ms
+17/10/11 20:48:36 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 7360, inMemRecordsNum = 60, currentMemory = 5.0 MB, myMemoryThreshold = 5.0 MB
+17/10/11 20:48:36 DEBUG TaskMemoryManager: [Require] Task 145 required 5.0 MB and got 5.0 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:36 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 5.0 MB (currentMem = 5.0 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:37 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 14848, inMemRecordsNum = 60, currentMemory = 10.1 MB, myMemoryThreshold = 10.0 MB
+17/10/11 20:48:37 DEBUG TaskMemoryManager: [Require] Task 145 required 10.1 MB and got 10.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:37 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 10.1 MB (currentMem = 15.1 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:37 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 30144, inMemRecordsNum = 60, currentMemory = 20.1 MB, myMemoryThreshold = 20.1 MB
+17/10/11 20:48:37 DEBUG TaskMemoryManager: [Require] Task 145 required 20.1 MB and got 20.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:37 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 20.1 MB (currentMem = 35.2 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:37 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 60576, inMemRecordsNum = 60, currentMemory = 40.3 MB, myMemoryThreshold = 40.2 MB
+17/10/11 20:48:37 DEBUG TaskMemoryManager: [Require] Task 145 required 40.3 MB and got 40.3 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:37 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 40.3 MB (currentMem = 75.5 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:38 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 122784, inMemRecordsNum = 60, currentMemory = 80.5 MB, myMemoryThreshold = 80.5 MB
+17/10/11 20:48:38 DEBUG TaskMemoryManager: [Require] Task 145 required 80.6 MB and got 80.6 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:38 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 80.6 MB (currentMem = 156.1 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:39 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 244384, inMemRecordsNum = 60, currentMemory = 166.1 MB, myMemoryThreshold = 161.1 MB
+17/10/11 20:48:39 DEBUG TaskMemoryManager: [Require] Task 145 required 171.0 MB and got 171.0 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:39 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 171.0 MB (currentMem = 327.1 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:39 INFO TransportClientFactory: Successfully created connection to /172.26.80.230:36989 after 6 ms (0 ms spent in bootstraps)
+17/10/11 20:48:40 INFO TransportClientFactory: Successfully created connection to /172.26.80.230:40895 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:40 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 497056, inMemRecordsNum = 60, currentMemory = 332.1 MB, myMemoryThreshold = 332.1 MB
+17/10/11 20:48:40 DEBUG TaskMemoryManager: [Require] Task 145 required 332.1 MB and got 332.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:40 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 332.1 MB (currentMem = 659.2 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:42 INFO TransportClientFactory: Successfully created connection to /172.26.80.235:42688 after 2 ms (0 ms spent in bootstraps)
+17/10/11 20:48:43 INFO TransportClientFactory: Successfully created connection to /172.26.80.233:46875 after 2 ms (0 ms spent in bootstraps)
+17/10/11 20:48:43 INFO TransportClientFactory: Successfully created connection to /172.26.80.235:38939 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:44 INFO TransportClientFactory: Successfully created connection to /172.26.80.237:32852 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:44 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 985376, inMemRecordsNum = 60, currentMemory = 664.3 MB, myMemoryThreshold = 664.2 MB
+17/10/11 20:48:44 DEBUG TaskMemoryManager: [Require] Task 145 required 664.3 MB and got 664.3 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:44 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 664.3 MB (currentMem = 1323.5 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:44 INFO TransportClientFactory: Successfully created connection to /172.26.80.231:34094 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:45 INFO TransportClientFactory: Successfully created connection to /172.26.80.229:35457 after 6 ms (0 ms spent in bootstraps)
+17/10/11 20:48:45 INFO TransportClientFactory: Successfully created connection to /172.26.80.232:44248 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:46 INFO TransportClientFactory: Successfully created connection to /172.26.80.230:33970 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:46 INFO TransportClientFactory: Successfully created connection to /172.26.80.235:46198 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:50 INFO TransportClientFactory: Successfully created connection to /172.26.80.231:37728 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:50 INFO TransportClientFactory: Successfully created connection to /172.26.80.229:38780 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:50 INFO TransportClientFactory: Successfully created connection to /172.26.80.229:45810 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:51 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 1988640, inMemRecordsNum = 60, currentMemory = 1465.3 MB, myMemoryThreshold = 1328.5 MB
+17/10/11 20:48:51 DEBUG TaskMemoryManager: [Require] Task 145 required 1602.1 MB and got 1602.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:51 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 1602.1 MB (currentMem = 2.9 GB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:48:51 INFO TransportClientFactory: Successfully created connection to /172.26.80.230:42509 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:52 INFO TransportClientFactory: Successfully created connection to /172.26.80.236:43436 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:52 INFO TransportClientFactory: Successfully created connection to /172.26.80.231:41553 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:53 INFO TransportClientFactory: Successfully created connection to /172.26.80.232:34751 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:54 INFO TransportClientFactory: Successfully created connection to /172.26.80.237:45667 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:55 INFO TransportClientFactory: Successfully created connection to /172.26.80.233:46145 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:48:55 INFO TransportClientFactory: Successfully created connection to /172.26.80.229:33015 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:49:01 INFO TransportClientFactory: Successfully created connection to /172.26.80.233:35825 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:49:04 INFO TransportClientFactory: Successfully created connection to /172.26.80.232:39668 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:49:05 INFO TransportClientFactory: Successfully created connection to /172.26.80.231:35367 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:49:05 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 4262688, inMemRecordsNum = 60, currentMemory = 2.9 GB, myMemoryThreshold = 2.9 GB
+17/10/11 20:49:05 DEBUG TaskMemoryManager: [Require] Task 145 required 3.0 GB and got 717.2 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:49:05 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 717.2 MB (currentMem = 3.6 GB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:49:08 INFO TransportClientFactory: Successfully created connection to /172.26.80.236:32996 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:49:09 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 5243424, inMemRecordsNum = 60, currentMemory = 3.6 GB, myMemoryThreshold = 3.6 GB
+17/10/11 20:49:09 DEBUG TaskMemoryManager: [Require] Task 145 required 3.6 GB and got 0.0 B for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:49:09 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 0.0 B (currentMem = 3.6 GB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:49:09 INFO ExternalAppendOnlyMap: [Spill] Thread 55 spilling in-memory map of 3.6 GB to disk (1 time so far)
+17/10/11 20:49:13 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 1, recordUnSerializedSize = 60.3 MB, record = (String, CompactBuffer)
+17/10/11 20:49:13 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 2, recordUnSerializedSize = 60.2 MB, record = (String, CompactBuffer)
+17/10/11 20:49:14 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 3, recordUnSerializedSize = 60.0 MB, record = (String, CompactBuffer)
+17/10/11 20:49:15 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 4, recordUnSerializedSize = 59.9 MB, record = (String, CompactBuffer)
+17/10/11 20:49:16 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 5, recordUnSerializedSize = 61.4 MB, record = (String, CompactBuffer)
+17/10/11 20:49:16 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 6, recordUnSerializedSize = 59.9 MB, record = (String, CompactBuffer)
+17/10/11 20:49:17 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 7, recordUnSerializedSize = 59.3 MB, record = (String, CompactBuffer)
+17/10/11 20:49:18 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 8, recordUnSerializedSize = 60.7 MB, record = (String, CompactBuffer)
+17/10/11 20:49:19 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 9, recordUnSerializedSize = 60.6 MB, record = (String, CompactBuffer)
+17/10/11 20:49:20 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 10, recordUnSerializedSize = 60.5 MB, record = (String, CompactBuffer)
+17/10/11 20:49:20 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 11, recordUnSerializedSize = 61.3 MB, record = (String, CompactBuffer)
+17/10/11 20:49:21 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 12, recordUnSerializedSize = 59.5 MB, record = (String, CompactBuffer)
+17/10/11 20:49:22 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 13, recordUnSerializedSize = 59.8 MB, record = (String, CompactBuffer)
+17/10/11 20:49:22 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 14, recordUnSerializedSize = 61.4 MB, record = (String, CompactBuffer)
+17/10/11 20:49:23 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 15, recordUnSerializedSize = 60.5 MB, record = (String, CompactBuffer)
+17/10/11 20:49:24 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 16, recordUnSerializedSize = 60.2 MB, record = (String, CompactBuffer)
+17/10/11 20:49:25 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 17, recordUnSerializedSize = 61.2 MB, record = (String, CompactBuffer)
+17/10/11 20:49:26 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 18, recordUnSerializedSize = 60.3 MB, record = (String, CompactBuffer)
+17/10/11 20:49:27 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 19, recordUnSerializedSize = 61.6 MB, record = (String, CompactBuffer)
+17/10/11 20:49:28 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 20, recordUnSerializedSize = 61.6 MB, record = (String, CompactBuffer)
+17/10/11 20:49:28 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 21, recordUnSerializedSize = 60.8 MB, record = (String, CompactBuffer)
+17/10/11 20:49:29 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 22, recordUnSerializedSize = 60.7 MB, record = (String, CompactBuffer)
+17/10/11 20:49:30 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 23, recordUnSerializedSize = 60.8 MB, record = (String, CompactBuffer)
+17/10/11 20:49:30 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 24, recordUnSerializedSize = 61.5 MB, record = (String, CompactBuffer)
+17/10/11 20:49:31 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 25, recordUnSerializedSize = 60.6 MB, record = (String, CompactBuffer)
+17/10/11 20:49:32 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 26, recordUnSerializedSize = 60.1 MB, record = (String, CompactBuffer)
+17/10/11 20:49:33 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 27, recordUnSerializedSize = 61.7 MB, record = (String, CompactBuffer)
+17/10/11 20:49:33 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 28, recordUnSerializedSize = 60.6 MB, record = (String, CompactBuffer)
+17/10/11 20:49:34 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 29, recordUnSerializedSize = 60.8 MB, record = (String, CompactBuffer)
+17/10/11 20:49:35 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 30, recordUnSerializedSize = 59.8 MB, record = (String, CompactBuffer)
+17/10/11 20:49:36 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 31, recordUnSerializedSize = 61.1 MB, record = (String, CompactBuffer)
+17/10/11 20:49:36 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 32, recordUnSerializedSize = 60.3 MB, record = (String, CompactBuffer)
+17/10/11 20:49:37 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 33, recordUnSerializedSize = 59.8 MB, record = (String, CompactBuffer)
+17/10/11 20:49:38 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 34, recordUnSerializedSize = 60.4 MB, record = (String, CompactBuffer)
+17/10/11 20:49:39 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 35, recordUnSerializedSize = 60.2 MB, record = (String, CompactBuffer)
+17/10/11 20:49:42 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 36, recordUnSerializedSize = 59.3 MB, record = (String, CompactBuffer)
+17/10/11 20:49:42 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 37, recordUnSerializedSize = 60.2 MB, record = (String, CompactBuffer)
+17/10/11 20:49:43 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 38, recordUnSerializedSize = 58.7 MB, record = (String, CompactBuffer)
+17/10/11 20:49:44 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 39, recordUnSerializedSize = 59.9 MB, record = (String, CompactBuffer)
+17/10/11 20:49:44 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 40, recordUnSerializedSize = 60.7 MB, record = (String, CompactBuffer)
+17/10/11 20:49:45 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 41, recordUnSerializedSize = 61.2 MB, record = (String, CompactBuffer)
+17/10/11 20:49:46 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 42, recordUnSerializedSize = 59.0 MB, record = (String, CompactBuffer)
+17/10/11 20:49:46 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 43, recordUnSerializedSize = 60.5 MB, record = (String, CompactBuffer)
+17/10/11 20:49:47 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 44, recordUnSerializedSize = 60.3 MB, record = (String, CompactBuffer)
+17/10/11 20:49:48 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 45, recordUnSerializedSize = 60.7 MB, record = (String, CompactBuffer)
+17/10/11 20:49:48 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 46, recordUnSerializedSize = 60.5 MB, record = (String, CompactBuffer)
+17/10/11 20:49:49 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 47, recordUnSerializedSize = 61.1 MB, record = (String, CompactBuffer)
+17/10/11 20:49:50 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 48, recordUnSerializedSize = 59.1 MB, record = (String, CompactBuffer)
+17/10/11 20:49:51 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 49, recordUnSerializedSize = 61.0 MB, record = (String, CompactBuffer)
+17/10/11 20:49:52 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 50, recordUnSerializedSize = 59.8 MB, record = (String, CompactBuffer)
+17/10/11 20:49:53 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 51, recordUnSerializedSize = 60.6 MB, record = (String, CompactBuffer)
+17/10/11 20:49:53 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 52, recordUnSerializedSize = 60.6 MB, record = (String, CompactBuffer)
+17/10/11 20:49:53 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 53, recordUnSerializedSize = 59.6 MB, record = (String, CompactBuffer)
+17/10/11 20:49:54 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 54, recordUnSerializedSize = 60.7 MB, record = (String, CompactBuffer)
+17/10/11 20:49:55 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 55, recordUnSerializedSize = 60.2 MB, record = (String, CompactBuffer)
+17/10/11 20:49:55 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 56, recordUnSerializedSize = 60.8 MB, record = (String, CompactBuffer)
+17/10/11 20:49:56 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 57, recordUnSerializedSize = 61.6 MB, record = (String, CompactBuffer)
+17/10/11 20:49:56 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 58, recordUnSerializedSize = 59.1 MB, record = (String, CompactBuffer)
+17/10/11 20:49:56 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 59, recordUnSerializedSize = 60.5 MB, record = (String, CompactBuffer)
+17/10/11 20:49:57 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 60, recordUnSerializedSize = 60.9 MB, record = (String, CompactBuffer)
+17/10/11 20:49:57 DEBUG ExternalAppendOnlyMap: [Serialized buffer in flush()] writerSize = 1130.0 MB
+17/10/11 20:49:57 DEBUG ExternalAppendOnlyMap: [DiskMapIterator] file = /dataDisk/spark-2.1.4.19-bin-2.7.1/shuffletmp/spark-d0e85582-f145-4ffb-a2c3-ee74b6e7bfa7/executor-b2566125-63dd-47c6-9025-c8fb3c86722a/blockmgr-472fd1c5-5648-486b-976f-1460bddf7aee/36/temp_local_c7f05aa4-a46e-4f22-a6b1-4ed2a7cb8f55, blockId = temp_local_c7f05aa4-a46e-4f22-a6b1-4ed2a7cb8f55, batchSizes = ArrayBuffer(609208757)
+17/10/11 20:49:57 DEBUG ExternalAppendOnlyMap: [DiskMapIterator.nextBatchStream] start = 0, end = 609208757, batchOffsets = [0, 609208757]
+17/10/11 20:50:03 DEBUG ExternalAppendOnlyMap: [DiskMapIterator.beforeRead.heapUsage] used = 3.6 GB, committed = 6.2 GB, max = 6.2 GB
+17/10/11 20:50:09 DEBUG ExternalAppendOnlyMap: [DiskMapIterator.afterDeserializeStream.heapUsage] used = 3.6 GB, committed = 6.2 GB, max = 6.2 GB
+17/10/11 20:50:09 DEBUG ExternalAppendOnlyMap: [DiskMapIterator.deserializer.memoryUsage] serSize = 24.0 B, deserSize = 65.7 KB, bufferedStream = 63.5 KB
+17/10/11 20:50:09 INFO ExternalAppendOnlyMap: [Task 145 SpillMetrics] release = 3.6 GB, writeTime = 59 s, recordsWritten = 60, bytesWritten = 581.0 MB, avgRecordSize = 9.7 MB
+17/10/11 20:50:09 DEBUG TaskMemoryManager: [Release] Task 145 release 3.6 GB from org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:15 DEBUG TaskMemoryManager: [CurrentHeapMemoryUsage] used = 3.6 GB, committed = 6.2 GB, max = 6.2 GB
+17/10/11 20:50:15 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 7360, inMemRecordsNum = 60, currentMemory = 5.0 MB, myMemoryThreshold = 5.0 MB
+17/10/11 20:50:15 DEBUG TaskMemoryManager: [Require] Task 145 required 5.0 MB and got 5.0 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:15 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 5.0 MB (currentMem = 5.0 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:15 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 14976, inMemRecordsNum = 60, currentMemory = 10.0 MB, myMemoryThreshold = 10.0 MB
+17/10/11 20:50:15 DEBUG TaskMemoryManager: [Require] Task 145 required 10.1 MB and got 10.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:15 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 10.1 MB (currentMem = 15.1 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:16 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 30176, inMemRecordsNum = 60, currentMemory = 20.1 MB, myMemoryThreshold = 20.1 MB
+17/10/11 20:50:16 DEBUG TaskMemoryManager: [Require] Task 145 required 20.1 MB and got 20.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:16 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 20.1 MB (currentMem = 35.2 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:16 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 60352, inMemRecordsNum = 60, currentMemory = 40.2 MB, myMemoryThreshold = 40.2 MB
+17/10/11 20:50:16 DEBUG TaskMemoryManager: [Require] Task 145 required 40.2 MB and got 40.2 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:16 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 40.2 MB (currentMem = 75.4 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:16 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 122816, inMemRecordsNum = 60, currentMemory = 80.4 MB, myMemoryThreshold = 80.4 MB
+17/10/11 20:50:16 DEBUG TaskMemoryManager: [Require] Task 145 required 80.4 MB and got 80.4 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:16 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 80.4 MB (currentMem = 155.8 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:17 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 244384, inMemRecordsNum = 60, currentMemory = 166.2 MB, myMemoryThreshold = 160.8 MB
+17/10/11 20:50:17 DEBUG TaskMemoryManager: [Require] Task 145 required 171.6 MB and got 171.6 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:17 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 171.6 MB (currentMem = 327.4 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:18 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 497792, inMemRecordsNum = 60, currentMemory = 332.4 MB, myMemoryThreshold = 332.4 MB
+17/10/11 20:50:18 DEBUG TaskMemoryManager: [Require] Task 145 required 332.4 MB and got 332.4 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:18 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 332.4 MB (currentMem = 659.8 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:20 INFO TransportClientFactory: Successfully created connection to /172.26.80.236:43821 after 1 ms (0 ms spent in bootstraps)
+17/10/11 20:50:20 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 986240, inMemRecordsNum = 60, currentMemory = 664.8 MB, myMemoryThreshold = 664.8 MB
+17/10/11 20:50:20 DEBUG TaskMemoryManager: [Require] Task 145 required 664.8 MB and got 664.8 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:20 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 664.8 MB (currentMem = 1324.6 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:25 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 1988608, inMemRecordsNum = 60, currentMemory = 1460.2 MB, myMemoryThreshold = 1329.6 MB
+17/10/11 20:50:25 DEBUG TaskMemoryManager: [Require] Task 145 required 1590.9 MB and got 1590.9 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:25 DEBUG TaskMemoryManager: [Acquired] Task 145 acquired 1590.9 MB (currentMem = 2.8 GB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:50:28 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 1, recordUnSerializedSize = 60.3 MB, record = (String, CompactBuffer)
+17/10/11 20:50:28 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 2, recordUnSerializedSize = 60.2 MB, record = (String, CompactBuffer)
+17/10/11 20:50:28 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/10/11 20:50:28 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 1, recordSize = 85.8 MB, record = (String, CompactBuffer)
+17/10/11 20:50:28 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 2.0 GB, mergedBuffersLength = 2, mergedBuffersBytes = 2.0 GB
+17/10/11 20:50:28 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 2.0 GB, $anon$1
+17/10/11 20:50:28 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 2.0 GB, $anon$1
+17/10/11 20:50:29 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 3, recordUnSerializedSize = 60.0 MB, record = (String, CompactBuffer)
+17/10/11 20:50:29 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 2.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 2.3 GB
+17/10/11 20:50:29 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.6 MB, bufferedIteratorSize = 2.3 GB, $anon$1
+17/10/11 20:50:29 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.2 MB, bufferedIteratorSize = 2.2 GB, $anon$1
+17/10/11 20:50:30 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 2, recordSize = 85.4 MB, record = (String, CompactBuffer)
+17/10/11 20:50:30 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 2.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 2.3 GB
+17/10/11 20:50:30 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 2.3 GB, $anon$1
+17/10/11 20:50:30 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 2.3 GB, $anon$1
+17/10/11 20:50:30 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 4, recordUnSerializedSize = 59.9 MB, record = (String, CompactBuffer)
+17/10/11 20:50:30 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 2.6 GB, mergedBuffersLength = 2, mergedBuffersBytes = 2.6 GB
+17/10/11 20:50:30 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.8 MB, bufferedIteratorSize = 2.6 GB, $anon$1
+17/10/11 20:50:30 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.0 MB, bufferedIteratorSize = 2.5 GB, $anon$1
+17/10/11 20:50:33 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 3, recordSize = 84.7 MB, record = (String, CompactBuffer)
+17/10/11 20:50:33 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 2.6 GB, mergedBuffersLength = 2, mergedBuffersBytes = 2.6 GB
+17/10/11 20:50:33 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 2.6 GB, $anon$1
+17/10/11 20:50:33 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 2.6 GB, $anon$1
+17/10/11 20:50:33 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 5, recordUnSerializedSize = 61.4 MB, record = (String, CompactBuffer)
+17/10/11 20:50:33 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 2.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 2.9 GB
+17/10/11 20:50:33 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.6 MB, bufferedIteratorSize = 2.9 GB, $anon$1
+17/10/11 20:50:33 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.9 MB, bufferedIteratorSize = 2.9 GB, $anon$1
+17/10/11 20:50:34 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 4, recordSize = 85.9 MB, record = (String, CompactBuffer)
+17/10/11 20:50:34 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 2.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 2.9 GB
+17/10/11 20:50:34 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 2.9 GB, $anon$1
+17/10/11 20:50:34 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 2.9 GB, $anon$1
+17/10/11 20:50:34 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 6, recordUnSerializedSize = 59.9 MB, record = (String, CompactBuffer)
+17/10/11 20:50:34 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 3.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.2 GB
+17/10/11 20:50:34 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.7 MB, bufferedIteratorSize = 3.2 GB, $anon$1
+17/10/11 20:50:34 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.4 MB, bufferedIteratorSize = 3.1 GB, $anon$1
+17/10/11 20:50:35 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 5, recordSize = 85.8 MB, record = (String, CompactBuffer)
+17/10/11 20:50:35 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 3.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.2 GB
+17/10/11 20:50:35 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.2 GB, $anon$1
+17/10/11 20:50:35 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.2 GB, $anon$1
+17/10/11 20:50:35 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 7, recordUnSerializedSize = 59.3 MB, record = (String, CompactBuffer)
+17/10/11 20:50:35 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 3.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.2 GB
+17/10/11 20:50:35 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.7 MB, bufferedIteratorSize = 3.2 GB, $anon$1
+17/10/11 20:50:35 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.9 MB, bufferedIteratorSize = 3.1 GB, $anon$1
+17/10/11 20:50:36 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 6, recordSize = 85.2 MB, record = (String, CompactBuffer)
+17/10/11 20:50:36 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 3.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.2 GB
+17/10/11 20:50:36 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.2 GB, $anon$1
+17/10/11 20:50:36 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.2 GB, $anon$1
+17/10/11 20:50:36 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 8, recordUnSerializedSize = 60.7 MB, record = (String, CompactBuffer)
+17/10/11 20:50:36 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 3.5 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.5 GB
+17/10/11 20:50:36 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.5 MB, bufferedIteratorSize = 3.5 GB, $anon$1
+17/10/11 20:50:36 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.3 MB, bufferedIteratorSize = 3.4 GB, $anon$1
+17/10/11 20:50:37 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 7, recordSize = 86.0 MB, record = (String, CompactBuffer)
+17/10/11 20:50:37 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 3.5 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.5 GB
+17/10/11 20:50:37 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.5 GB, $anon$1
+17/10/11 20:50:37 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.5 GB, $anon$1
+17/10/11 20:50:37 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 9, recordUnSerializedSize = 60.6 MB, record = (String, CompactBuffer)
+17/10/11 20:50:37 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 3.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.7 GB
+17/10/11 20:50:37 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.8 MB, bufferedIteratorSize = 3.7 GB, $anon$1
+17/10/11 20:50:37 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.7 MB, bufferedIteratorSize = 3.7 GB, $anon$1
+17/10/11 20:50:38 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 8, recordSize = 85.3 MB, record = (String, CompactBuffer)
+17/10/11 20:50:38 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 3.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.7 GB
+17/10/11 20:50:38 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.7 GB, $anon$1
+17/10/11 20:50:38 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.7 GB, $anon$1
+17/10/11 20:50:38 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 10, recordUnSerializedSize = 60.5 MB, record = (String, CompactBuffer)
+17/10/11 20:50:38 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 3.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.9 GB
+17/10/11 20:50:38 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.0 MB, bufferedIteratorSize = 3.9 GB, $anon$1
+17/10/11 20:50:38 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.6 MB, bufferedIteratorSize = 3.8 GB, $anon$1
+17/10/11 20:50:39 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 9, recordSize = 84.7 MB, record = (String, CompactBuffer)
+17/10/11 20:50:39 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 3.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 3.9 GB
+17/10/11 20:50:39 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.9 GB, $anon$1
+17/10/11 20:50:39 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 3.9 GB, $anon$1
+17/10/11 20:50:39 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 11, recordUnSerializedSize = 61.3 MB, record = (String, CompactBuffer)
+17/10/11 20:50:39 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 4.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 4.2 GB
+17/10/11 20:50:39 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.0 MB, bufferedIteratorSize = 4.2 GB, $anon$1
+17/10/11 20:50:39 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.5 MB, bufferedIteratorSize = 4.1 GB, $anon$1
+17/10/11 20:50:40 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 10, recordSize = 85.6 MB, record = (String, CompactBuffer)
+17/10/11 20:50:40 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 4.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 4.2 GB
+17/10/11 20:50:40 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 4.2 GB, $anon$1
+17/10/11 20:50:40 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 4.2 GB, $anon$1
+17/10/11 20:50:40 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 12, recordUnSerializedSize = 59.5 MB, record = (String, CompactBuffer)
+17/10/11 20:50:40 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 4.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 4.4 GB
+17/10/11 20:50:40 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.1 MB, bufferedIteratorSize = 4.4 GB, $anon$1
+17/10/11 20:50:40 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.3 MB, bufferedIteratorSize = 4.4 GB, $anon$1
+17/10/11 20:50:41 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 11, recordSize = 84.7 MB, record = (String, CompactBuffer)
+17/10/11 20:50:41 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 4.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 4.4 GB
+17/10/11 20:50:41 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 4.4 GB, $anon$1
+17/10/11 20:50:41 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 4.4 GB, $anon$1
+17/10/11 20:50:42 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 13, recordUnSerializedSize = 59.8 MB, record = (String, CompactBuffer)
+17/10/11 20:50:42 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 4.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 4.7 GB
+17/10/11 20:50:42 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.6 MB, bufferedIteratorSize = 4.7 GB, $anon$1
+17/10/11 20:50:42 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.5 MB, bufferedIteratorSize = 4.7 GB, $anon$1
+17/10/11 20:50:42 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 12, recordSize = 86.5 MB, record = (String, CompactBuffer)
+17/10/11 20:50:42 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 4.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 4.7 GB
+17/10/11 20:50:42 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 4.7 GB, $anon$1
+17/10/11 20:50:43 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 4.7 GB, $anon$1
+17/10/11 20:50:43 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 14, recordUnSerializedSize = 61.4 MB, record = (String, CompactBuffer)
+17/10/11 20:50:43 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 4.8 GB, mergedBuffersLength = 2, mergedBuffersBytes = 4.8 GB
+17/10/11 20:50:43 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.4 MB, bufferedIteratorSize = 4.8 GB, $anon$1
+17/10/11 20:50:43 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.8 MB, bufferedIteratorSize = 4.8 GB, $anon$1
+17/10/11 20:50:43 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 13, recordSize = 84.0 MB, record = (String, CompactBuffer)
+17/10/11 20:50:44 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 4.8 GB, mergedBuffersLength = 2, mergedBuffersBytes = 4.8 GB
+17/10/11 20:50:44 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 4.8 GB, $anon$1
+17/10/11 20:50:44 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 4.8 GB, $anon$1
+17/10/11 20:50:44 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 15, recordUnSerializedSize = 60.5 MB, record = (String, CompactBuffer)
+17/10/11 20:50:44 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 5.1 GB, mergedBuffersLength = 2, mergedBuffersBytes = 5.1 GB
+17/10/11 20:50:44 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.5 MB, bufferedIteratorSize = 5.1 GB, $anon$1
+17/10/11 20:50:44 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.4 MB, bufferedIteratorSize = 5.0 GB, $anon$1
+17/10/11 20:50:44 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 14, recordSize = 85.2 MB, record = (String, CompactBuffer)
+17/10/11 20:50:45 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 5.1 GB, mergedBuffersLength = 2, mergedBuffersBytes = 5.1 GB
+17/10/11 20:50:45 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 5.1 GB, $anon$1
+17/10/11 20:50:45 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 5.1 GB, $anon$1
+17/10/11 20:50:45 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 16, recordUnSerializedSize = 60.2 MB, record = (String, CompactBuffer)
+17/10/11 20:50:45 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 5.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 5.4 GB
+17/10/11 20:50:45 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.2 MB, bufferedIteratorSize = 5.4 GB, $anon$1
+17/10/11 20:50:45 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.5 MB, bufferedIteratorSize = 5.3 GB, $anon$1
+17/10/11 20:50:46 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 15, recordSize = 85.7 MB, record = (String, CompactBuffer)
+17/10/11 20:50:46 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 5.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 5.4 GB
+17/10/11 20:50:46 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 5.4 GB, $anon$1
+17/10/11 20:50:47 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 5.4 GB, $anon$1
+17/10/11 20:50:47 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 17, recordUnSerializedSize = 61.2 MB, record = (String, CompactBuffer)
+17/10/11 20:50:47 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 5.5 GB, mergedBuffersLength = 2, mergedBuffersBytes = 5.5 GB
+17/10/11 20:50:47 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.8 MB, bufferedIteratorSize = 5.5 GB, $anon$1
+17/10/11 20:50:47 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.2 MB, bufferedIteratorSize = 5.5 GB, $anon$1
+17/10/11 20:50:47 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 16, recordSize = 86.2 MB, record = (String, CompactBuffer)
+17/10/11 20:50:47 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 5.5 GB, mergedBuffersLength = 2, mergedBuffersBytes = 5.5 GB
+17/10/11 20:50:47 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 5.5 GB, $anon$1
+17/10/11 20:50:48 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 5.5 GB, $anon$1
+17/10/11 20:50:48 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 18, recordUnSerializedSize = 60.3 MB, record = (String, CompactBuffer)
+17/10/11 20:50:48 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 5.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 5.9 GB
+17/10/11 20:50:48 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.9 MB, bufferedIteratorSize = 5.9 GB, $anon$1
+17/10/11 20:50:48 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.2 MB, bufferedIteratorSize = 5.9 GB, $anon$1
+17/10/11 20:50:48 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 17, recordSize = 85.8 MB, record = (String, CompactBuffer)
+17/10/11 20:50:48 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 5.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 5.9 GB
+17/10/11 20:50:49 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 5.9 GB, $anon$1
+17/10/11 20:50:49 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 5.9 GB, $anon$1
+17/10/11 20:50:49 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 19, recordUnSerializedSize = 61.6 MB, record = (String, CompactBuffer)
+17/10/11 20:50:49 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 6.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.2 GB
+17/10/11 20:50:49 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.8 MB, bufferedIteratorSize = 6.2 GB, $anon$1
+17/10/11 20:50:49 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.3 MB, bufferedIteratorSize = 6.1 GB, $anon$1
+17/10/11 20:50:49 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 18, recordSize = 85.0 MB, record = (String, CompactBuffer)
+17/10/11 20:50:49 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 6.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.2 GB
+17/10/11 20:50:50 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.2 GB, $anon$1
+17/10/11 20:50:50 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.2 GB, $anon$1
+17/10/11 20:50:50 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 20, recordUnSerializedSize = 61.6 MB, record = (String, CompactBuffer)
+17/10/11 20:50:50 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 6.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.3 GB
+17/10/11 20:50:50 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.3 MB, bufferedIteratorSize = 6.3 GB, $anon$1
+17/10/11 20:50:50 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.6 MB, bufferedIteratorSize = 6.2 GB, $anon$1
+17/10/11 20:50:50 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 19, recordSize = 85.2 MB, record = (String, CompactBuffer)
+17/10/11 20:50:50 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 6.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.3 GB
+17/10/11 20:50:51 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.3 GB, $anon$1
+17/10/11 20:50:51 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.3 GB, $anon$1
+17/10/11 20:50:51 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 21, recordUnSerializedSize = 60.8 MB, record = (String, CompactBuffer)
+17/10/11 20:50:51 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 6.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.7 GB
+17/10/11 20:50:51 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.1 MB, bufferedIteratorSize = 6.7 GB, $anon$1
+17/10/11 20:50:51 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.6 MB, bufferedIteratorSize = 6.6 GB, $anon$1
+17/10/11 20:50:52 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 20, recordSize = 85.9 MB, record = (String, CompactBuffer)
+17/10/11 20:50:52 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 6.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.7 GB
+17/10/11 20:50:52 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.7 GB, $anon$1
+17/10/11 20:50:52 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.7 GB, $anon$1
+17/10/11 20:50:57 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 22, recordUnSerializedSize = 60.7 MB, record = (String, CompactBuffer)
+17/10/11 20:50:57 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 7.0 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.0 GB
+17/10/11 20:50:57 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.5 MB, bufferedIteratorSize = 7.0 GB, $anon$1
+17/10/11 20:50:57 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.8 MB, bufferedIteratorSize = 7.0 GB, $anon$1
+17/10/11 20:50:58 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 21, recordSize = 85.9 MB, record = (String, CompactBuffer)
+17/10/11 20:50:58 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 7.0 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.0 GB
+17/10/11 20:50:58 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.0 GB, $anon$1
+17/10/11 20:50:58 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.0 GB, $anon$1
+17/10/11 20:50:58 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 23, recordUnSerializedSize = 60.8 MB, record = (String, CompactBuffer)
+17/10/11 20:50:58 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 7.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.3 GB
+17/10/11 20:50:58 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.3 MB, bufferedIteratorSize = 7.3 GB, $anon$1
+17/10/11 20:50:58 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.7 MB, bufferedIteratorSize = 7.2 GB, $anon$1
+17/10/11 20:50:58 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 22, recordSize = 85.3 MB, record = (String, CompactBuffer)
+17/10/11 20:50:59 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 7.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.3 GB
+17/10/11 20:50:59 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.3 GB, $anon$1
+17/10/11 20:50:59 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.3 GB, $anon$1
+17/10/11 20:50:59 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 24, recordUnSerializedSize = 61.5 MB, record = (String, CompactBuffer)
+17/10/11 20:50:59 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 6.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.3 GB
+17/10/11 20:50:59 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.7 MB, bufferedIteratorSize = 6.3 GB, $anon$1
+17/10/11 20:50:59 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.8 MB, bufferedIteratorSize = 6.2 GB, $anon$1
+17/10/11 20:51:00 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 23, recordSize = 85.5 MB, record = (String, CompactBuffer)
+17/10/11 20:51:00 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 6.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.3 GB
+17/10/11 20:51:00 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.3 GB, $anon$1
+17/10/11 20:51:00 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.3 GB, $anon$1
+17/10/11 20:51:00 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 25, recordUnSerializedSize = 60.6 MB, record = (String, CompactBuffer)
+17/10/11 20:51:00 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 6.8 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.8 GB
+17/10/11 20:51:00 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.3 MB, bufferedIteratorSize = 6.8 GB, $anon$1
+17/10/11 20:51:00 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.5 MB, bufferedIteratorSize = 6.7 GB, $anon$1
+17/10/11 20:51:01 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 24, recordSize = 85.2 MB, record = (String, CompactBuffer)
+17/10/11 20:51:01 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 6.8 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.8 GB
+17/10/11 20:51:01 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.8 GB, $anon$1
+17/10/11 20:51:01 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.8 GB, $anon$1
+17/10/11 20:51:01 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 26, recordUnSerializedSize = 60.1 MB, record = (String, CompactBuffer)
+17/10/11 20:51:01 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 6.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.9 GB
+17/10/11 20:51:01 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.1 MB, bufferedIteratorSize = 6.9 GB, $anon$1
+17/10/11 20:51:01 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.6 MB, bufferedIteratorSize = 6.8 GB, $anon$1
+17/10/11 20:51:03 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 25, recordSize = 86.3 MB, record = (String, CompactBuffer)
+17/10/11 20:51:03 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 6.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 6.9 GB
+17/10/11 20:51:03 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.9 GB, $anon$1
+17/10/11 20:51:03 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 6.9 GB, $anon$1
+17/10/11 20:51:03 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 27, recordUnSerializedSize = 61.7 MB, record = (String, CompactBuffer)
+17/10/11 20:51:03 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 7.0 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.0 GB
+17/10/11 20:51:03 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.5 MB, bufferedIteratorSize = 7.0 GB, $anon$1
+17/10/11 20:51:03 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.1 MB, bufferedIteratorSize = 6.9 GB, $anon$1
+17/10/11 20:51:04 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 26, recordSize = 85.4 MB, record = (String, CompactBuffer)
+17/10/11 20:51:04 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 7.0 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.0 GB
+17/10/11 20:51:04 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.0 GB, $anon$1
+17/10/11 20:51:04 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.0 GB, $anon$1
+17/10/11 20:51:04 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 28, recordUnSerializedSize = 60.6 MB, record = (String, CompactBuffer)
+17/10/11 20:51:04 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 7.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.2 GB
+17/10/11 20:51:04 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.8 MB, bufferedIteratorSize = 7.2 GB, $anon$1
+17/10/11 20:51:04 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.7 MB, bufferedIteratorSize = 7.1 GB, $anon$1
+17/10/11 20:51:05 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 27, recordSize = 86.1 MB, record = (String, CompactBuffer)
+17/10/11 20:51:05 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 7.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.2 GB
+17/10/11 20:51:05 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.2 GB, $anon$1
+17/10/11 20:51:05 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.2 GB, $anon$1
+17/10/11 20:51:05 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 29, recordUnSerializedSize = 60.8 MB, record = (String, CompactBuffer)
+17/10/11 20:51:05 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 7.6 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.6 GB
+17/10/11 20:51:05 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.0 MB, bufferedIteratorSize = 7.6 GB, $anon$1
+17/10/11 20:51:05 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.6 MB, bufferedIteratorSize = 7.5 GB, $anon$1
+17/10/11 20:51:06 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 28, recordSize = 85.3 MB, record = (String, CompactBuffer)
+17/10/11 20:51:06 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 7.6 GB, mergedBuffersLength = 2, mergedBuffersBytes = 7.6 GB
+17/10/11 20:51:06 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.6 GB, $anon$1
+17/10/11 20:51:06 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 7.6 GB, $anon$1
+17/10/11 20:51:06 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 30, recordUnSerializedSize = 59.8 MB, record = (String, CompactBuffer)
+17/10/11 20:51:06 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 8.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 8.2 GB
+17/10/11 20:51:06 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.5 MB, bufferedIteratorSize = 8.2 GB, $anon$1
+17/10/11 20:51:07 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.8 MB, bufferedIteratorSize = 8.2 GB, $anon$1
+17/10/11 20:51:07 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 29, recordSize = 85.0 MB, record = (String, CompactBuffer)
+17/10/11 20:51:07 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 8.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 8.2 GB
+17/10/11 20:51:07 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 8.2 GB, $anon$1
+17/10/11 20:51:07 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 8.2 GB, $anon$1
+17/10/11 20:51:07 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 31, recordUnSerializedSize = 61.1 MB, record = (String, CompactBuffer)
+17/10/11 20:51:07 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 8.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 8.3 GB
+17/10/11 20:51:08 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.7 MB, bufferedIteratorSize = 8.3 GB, $anon$1
+17/10/11 20:51:08 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.8 MB, bufferedIteratorSize = 8.3 GB, $anon$1
+17/10/11 20:51:08 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 30, recordSize = 84.9 MB, record = (String, CompactBuffer)
+17/10/11 20:51:08 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 8.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 8.3 GB
+17/10/11 20:51:08 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 8.3 GB, $anon$1
+17/10/11 20:51:08 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 8.3 GB, $anon$1
+17/10/11 20:51:08 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 32, recordUnSerializedSize = 60.3 MB, record = (String, CompactBuffer)
+17/10/11 20:51:09 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 8.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 8.4 GB
+17/10/11 20:51:09 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.0 MB, bufferedIteratorSize = 8.4 GB, $anon$1
+17/10/11 20:51:09 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.1 MB, bufferedIteratorSize = 8.3 GB, $anon$1
+17/10/11 20:51:09 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 31, recordSize = 86.3 MB, record = (String, CompactBuffer)
+17/10/11 20:51:09 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 8.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 8.4 GB
+17/10/11 20:51:09 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 8.4 GB, $anon$1
+17/10/11 20:51:09 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 8.4 GB, $anon$1
+17/10/11 20:51:09 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 33, recordUnSerializedSize = 59.8 MB, record = (String, CompactBuffer)
+17/10/11 20:51:10 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 8.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 8.9 GB
+17/10/11 20:51:10 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.7 MB, bufferedIteratorSize = 8.9 GB, $anon$1
+17/10/11 20:51:10 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.3 MB, bufferedIteratorSize = 8.8 GB, $anon$1
+17/10/11 20:51:10 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 32, recordSize = 85.4 MB, record = (String, CompactBuffer)
+17/10/11 20:51:10 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 8.9 GB, mergedBuffersLength = 2, mergedBuffersBytes = 8.9 GB
+17/10/11 20:51:10 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 8.9 GB, $anon$1
+17/10/11 20:51:10 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 8.9 GB, $anon$1
+17/10/11 20:51:10 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 34, recordUnSerializedSize = 60.4 MB, record = (String, CompactBuffer)
+17/10/11 20:51:11 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 9.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.3 GB
+17/10/11 20:51:11 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.7 MB, bufferedIteratorSize = 9.3 GB, $anon$1
+17/10/11 20:51:11 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.8 MB, bufferedIteratorSize = 9.2 GB, $anon$1
+17/10/11 20:51:12 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 33, recordSize = 84.9 MB, record = (String, CompactBuffer)
+17/10/11 20:51:12 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 9.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.3 GB
+17/10/11 20:51:12 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.3 GB, $anon$1
+17/10/11 20:51:12 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.3 GB, $anon$1
+17/10/11 20:51:12 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 35, recordUnSerializedSize = 60.2 MB, record = (String, CompactBuffer)
+17/10/11 20:51:12 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 9.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.4 GB
+17/10/11 20:51:12 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.6 MB, bufferedIteratorSize = 9.4 GB, $anon$1
+17/10/11 20:51:12 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.4 MB, bufferedIteratorSize = 9.3 GB, $anon$1
+17/10/11 20:51:13 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 34, recordSize = 85.7 MB, record = (String, CompactBuffer)
+17/10/11 20:51:13 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 9.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.4 GB
+17/10/11 20:51:13 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.4 GB, $anon$1
+17/10/11 20:51:13 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.4 GB, $anon$1
+17/10/11 20:51:13 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 36, recordUnSerializedSize = 59.3 MB, record = (String, CompactBuffer)
+17/10/11 20:51:13 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 9.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.4 GB
+17/10/11 20:51:13 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.2 MB, bufferedIteratorSize = 9.4 GB, $anon$1
+17/10/11 20:51:14 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.2 MB, bufferedIteratorSize = 9.4 GB, $anon$1
+17/10/11 20:51:14 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 35, recordSize = 84.8 MB, record = (String, CompactBuffer)
+17/10/11 20:51:14 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 9.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.4 GB
+17/10/11 20:51:14 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.4 GB, $anon$1
+17/10/11 20:51:14 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.4 GB, $anon$1
+17/10/11 20:51:14 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 37, recordUnSerializedSize = 60.2 MB, record = (String, CompactBuffer)
+17/10/11 20:51:15 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 9.5 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.5 GB
+17/10/11 20:51:15 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.2 MB, bufferedIteratorSize = 9.5 GB, $anon$1
+17/10/11 20:51:15 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.3 MB, bufferedIteratorSize = 9.5 GB, $anon$1
+17/10/11 20:51:15 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 36, recordSize = 85.4 MB, record = (String, CompactBuffer)
+17/10/11 20:51:15 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 9.5 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.5 GB
+17/10/11 20:51:15 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.5 GB, $anon$1
+17/10/11 20:51:15 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.5 GB, $anon$1
+17/10/11 20:51:16 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 38, recordUnSerializedSize = 58.7 MB, record = (String, CompactBuffer)
+17/10/11 20:51:16 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 9.6 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.6 GB
+17/10/11 20:51:16 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.0 MB, bufferedIteratorSize = 9.6 GB, $anon$1
+17/10/11 20:51:16 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.2 MB, bufferedIteratorSize = 9.6 GB, $anon$1
+17/10/11 20:51:17 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 37, recordSize = 85.7 MB, record = (String, CompactBuffer)
+17/10/11 20:51:17 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 9.6 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.6 GB
+17/10/11 20:51:17 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.6 GB, $anon$1
+17/10/11 20:51:17 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.6 GB, $anon$1
+17/10/11 20:51:17 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 39, recordUnSerializedSize = 59.9 MB, record = (String, CompactBuffer)
+17/10/11 20:51:17 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 9.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.7 GB
+17/10/11 20:51:17 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.8 MB, bufferedIteratorSize = 9.7 GB, $anon$1
+17/10/11 20:51:17 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 58.7 MB, bufferedIteratorSize = 9.6 GB, $anon$1
+17/10/11 20:51:18 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 38, recordSize = 85.6 MB, record = (String, CompactBuffer)
+17/10/11 20:51:18 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 9.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.7 GB
+17/10/11 20:51:18 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.7 GB, $anon$1
+17/10/11 20:51:18 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.7 GB, $anon$1
+17/10/11 20:51:18 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 40, recordUnSerializedSize = 60.7 MB, record = (String, CompactBuffer)
+17/10/11 20:51:18 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 9.8 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.8 GB
+17/10/11 20:51:19 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.7 MB, bufferedIteratorSize = 9.8 GB, $anon$1
+17/10/11 20:51:19 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.9 MB, bufferedIteratorSize = 9.8 GB, $anon$1
+17/10/11 20:51:25 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 39, recordSize = 86.2 MB, record = (String, CompactBuffer)
+17/10/11 20:51:25 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 9.8 GB, mergedBuffersLength = 2, mergedBuffersBytes = 9.8 GB
+17/10/11 20:51:25 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.8 GB, $anon$1
+17/10/11 20:51:25 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 9.8 GB, $anon$1
+17/10/11 20:51:25 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 41, recordUnSerializedSize = 61.2 MB, record = (String, CompactBuffer)
+17/10/11 20:51:25 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 10.0 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.0 GB
+17/10/11 20:51:25 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.7 MB, bufferedIteratorSize = 10.0 GB, $anon$1
+17/10/11 20:51:28 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.7 MB, bufferedIteratorSize = 10.0 GB, $anon$1
+17/10/11 20:51:29 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 40, recordSize = 84.4 MB, record = (String, CompactBuffer)
+17/10/11 20:51:29 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 10.0 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.0 GB
+17/10/11 20:51:29 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.0 GB, $anon$1
+17/10/11 20:51:29 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.0 GB, $anon$1
+17/10/11 20:51:29 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 42, recordUnSerializedSize = 59.0 MB, record = (String, CompactBuffer)
+17/10/11 20:51:31 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 10.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.4 GB
+17/10/11 20:51:31 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.0 MB, bufferedIteratorSize = 10.4 GB, $anon$1
+17/10/11 20:51:32 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.2 MB, bufferedIteratorSize = 10.4 GB, $anon$1
+17/10/11 20:51:32 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 41, recordSize = 84.7 MB, record = (String, CompactBuffer)
+17/10/11 20:51:32 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 10.4 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.4 GB
+17/10/11 20:51:32 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.4 GB, $anon$1
+17/10/11 20:51:32 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.4 GB, $anon$1
+17/10/11 20:51:35 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 43, recordUnSerializedSize = 60.5 MB, record = (String, CompactBuffer)
+17/10/11 20:51:35 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 10.5 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.5 GB
+17/10/11 20:51:35 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.7 MB, bufferedIteratorSize = 10.5 GB, $anon$1
+17/10/11 20:51:35 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 59.0 MB, bufferedIteratorSize = 10.4 GB, $anon$1
+17/10/11 20:51:35 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 42, recordSize = 85.2 MB, record = (String, CompactBuffer)
+17/10/11 20:51:35 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 10.5 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.5 GB
+17/10/11 20:51:35 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.5 GB, $anon$1
+17/10/11 20:51:35 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.5 GB, $anon$1
+17/10/11 20:51:38 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 44, recordUnSerializedSize = 60.3 MB, record = (String, CompactBuffer)
+17/10/11 20:51:38 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 10.6 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.6 GB
+17/10/11 20:51:38 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.0 MB, bufferedIteratorSize = 10.6 GB, $anon$1
+17/10/11 20:51:38 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.5 MB, bufferedIteratorSize = 10.6 GB, $anon$1
+17/10/11 20:51:41 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 43, recordSize = 85.8 MB, record = (String, CompactBuffer)
+17/10/11 20:51:41 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 10.6 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.6 GB
+17/10/11 20:51:41 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.6 GB, $anon$1
+17/10/11 20:51:41 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.6 GB, $anon$1
+17/10/11 20:51:41 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 45, recordUnSerializedSize = 60.7 MB, record = (String, CompactBuffer)
+17/10/11 20:51:41 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 10.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.7 GB
+17/10/11 20:51:41 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.2 MB, bufferedIteratorSize = 10.7 GB, $anon$1
+17/10/11 20:51:41 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.3 MB, bufferedIteratorSize = 10.6 GB, $anon$1
+17/10/11 20:51:47 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 44, recordSize = 85.4 MB, record = (String, CompactBuffer)
+17/10/11 20:51:47 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 10.7 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.7 GB
+17/10/11 20:51:48 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.7 GB, $anon$1
+17/10/11 20:51:48 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.7 GB, $anon$1
+17/10/11 20:51:48 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 46, recordUnSerializedSize = 60.5 MB, record = (String, CompactBuffer)
+17/10/11 20:51:48 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 10.8 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.8 GB
+17/10/11 20:51:48 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.0 MB, bufferedIteratorSize = 10.8 GB, $anon$1
+17/10/11 20:51:48 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.7 MB, bufferedIteratorSize = 10.8 GB, $anon$1
+17/10/11 20:51:55 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 45, recordSize = 85.8 MB, record = (String, CompactBuffer)
+17/10/11 20:51:55 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 10.8 GB, mergedBuffersLength = 2, mergedBuffersBytes = 10.8 GB
+17/10/11 20:51:55 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.8 GB, $anon$1
+17/10/11 20:51:55 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 10.8 GB, $anon$1
+17/10/11 20:51:55 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 47, recordUnSerializedSize = 61.1 MB, record = (String, CompactBuffer)
+17/10/11 20:51:55 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 11.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 11.2 GB
+17/10/11 20:51:55 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 26.1 MB, bufferedIteratorSize = 11.2 GB, $anon$1
+17/10/11 20:51:55 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 60.5 MB, bufferedIteratorSize = 11.1 GB, $anon$1
+17/10/11 20:52:02 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 46, recordSize = 84.9 MB, record = (String, CompactBuffer)
+17/10/11 20:52:02 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 11.2 GB, mergedBuffersLength = 2, mergedBuffersBytes = 11.2 GB
+17/10/11 20:52:02 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 11.2 GB, $anon$1
+17/10/11 20:52:02 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 11.2 GB, $anon$1
+17/10/11 20:52:02 DEBUG ExternalAppendOnlyMap: [RecordReadFromDisk] recordIndex = 48, recordUnSerializedSize = 59.1 MB, record = (String, CompactBuffer)
+17/10/11 20:52:02 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterReadNewRecord] mergeHeapLength = 2, mergeHeapBytes = 11.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 11.3 GB
+17/10/11 20:52:02 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0]pairsNum = 1, pairsBytes = 25.9 MB, bufferedIteratorSize = 11.3 GB, $anon$1
+17/10/11 20:52:02 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1]pairsNum = 1, pairsBytes = 61.1 MB, bufferedIteratorSize = 11.2 GB, $anon$1
+17/10/11 20:52:08 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap] recordIndex = 47, recordSize = 86.0 MB, record = (String, CompactBuffer)
+17/10/11 20:52:09 DEBUG ExternalAppendOnlyMap: [RecordReadFromMergeHeap.afterMerge] mergeHeapLength = 0, mergeHeapBytes = 11.3 GB, mergedBuffersLength = 2, mergedBuffersBytes = 11.3 GB
+17/10/11 20:52:09 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 0] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 11.3 GB, $anon$1
+17/10/11 20:52:09 DEBUG ExternalAppendOnlyMap:   [StreamBuffer 1] pairsNum = 0, pairsBytes = 104.0 B, bufferedIteratorSize = 11.3 GB, $anon$1
+17/10/11 20:53:18 ERROR ExternalAppendOnlyMap: [Task 145 OOM] In-memory map usage = 2.8 GB, objectsRead = 48, currentRecordSize = 0.0 B, deserializeStream = 6.9 GB
+17/10/11 20:53:26 ERROR ExternalAppendOnlyMap: [CurrentHeapMemoryUsage] used = 4.8 GB, committed = 6.2 GB, max = 6.2 GB
+17/10/11 20:53:26 ERROR PairRDDFunctions: [Task 145 OOM] recordIndex = 47, recordSize = 17.6 MB, record = (NullWritable, Text), writer = SparkHadoopWriter, writerSize = 11.2 GB
+17/10/11 20:53:26 ERROR PairRDDFunctions: [CurrentHeapMemoryUsage] used = 4.9 GB, committed = 6.2 GB, max = 6.2 GB
+17/10/11 20:53:26 ERROR Utils: Aborting task
+java.lang.OutOfMemoryError: Java heap space
+	at java.io.ObjectInputStream$HandleTable.grow(ObjectInputStream.java:3779)
+	at java.io.ObjectInputStream$HandleTable.assign(ObjectInputStream.java:3585)
+	at java.io.ObjectInputStream.readString(ObjectInputStream.java:1860)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1526)
+	at java.io.ObjectInputStream.readArray(ObjectInputStream.java:1919)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1529)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2231)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2231)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:75)
+	at org.apache.spark.serializer.DeserializationStream.readValue(Serializer.scala:159)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$DiskMapIterator.readNextItem(ExternalAppendOnlyMap.scala:632)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$DiskMapIterator.hasNext(ExternalAppendOnlyMap.scala:672)
+	at scala.collection.Iterator$$anon$1.hasNext(Iterator.scala:1004)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator.org$apache$spark$util$collection$ExternalAppendOnlyMap$ExternalIterator$$readNextHashCode(ExternalAppendOnlyMap.scala:393)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator$$anonfun$next$5.apply(ExternalAppendOnlyMap.scala:486)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator$$anonfun$next$5.apply(ExternalAppendOnlyMap.scala:484)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator.next(ExternalAppendOnlyMap.scala:484)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator.next(ExternalAppendOnlyMap.scala:356)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$saveAsHadoopDataset$1$$anonfun$13$$anonfun$apply$7.apply$mcV$sp(PairRDDFunctions.scala:1253)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$saveAsHadoopDataset$1$$anonfun$13$$anonfun$apply$7.apply(PairRDDFunctions.scala:1249)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$saveAsHadoopDataset$1$$anonfun$13$$anonfun$apply$7.apply(PairRDDFunctions.scala:1249)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1341)
+17/10/11 20:53:26 WARN DFSClient: DataStreamer Exception
+java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.hadoop.net.SocketOutputStream$Writer.performIO(SocketOutputStream.java:63)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.apache.hadoop.net.SocketOutputStream.write(SocketOutputStream.java:117)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.hadoop.hdfs.DFSPacket.writeTo(DFSPacket.java:176)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:508)
+17/10/11 20:53:26 WARN DFSClient: Slow ReadProcessor read fields took 69952ms (threshold=30000ms); ack: seqno: -2 reply: SUCCESS reply: ERROR downstreamAckTimeNanos: 0 flag: 0 flag: 1, targets: [DatanodeInfoWithStorage[172.26.80.232:50010,DS-d4ed841a-51d3-4118-87af-6e9b779e524d,DISK], DatanodeInfoWithStorage[172.26.80.235:50010,DS-55a28295-899c-465d-9f1d-f12f51ddc1ee,DISK]]
+17/10/11 20:53:26 WARN DFSClient: Error Recovery for block BP-1156563755-172.26.80.234-1491883714023:blk_1073911540_171119 in pipeline DatanodeInfoWithStorage[172.26.80.232:50010,DS-d4ed841a-51d3-4118-87af-6e9b779e524d,DISK], DatanodeInfoWithStorage[172.26.80.235:50010,DS-55a28295-899c-465d-9f1d-f12f51ddc1ee,DISK]: bad datanode DatanodeInfoWithStorage[172.26.80.235:50010,DS-55a28295-899c-465d-9f1d-f12f51ddc1ee,DISK]
+17/10/11 20:53:26 DEBUG TaskMemoryManager: unreleased 2.8 GB memory from org.apache.spark.util.collection.ExternalAppendOnlyMap@ffdb0a
+17/10/11 20:53:26 ERROR Executor: Exception in task 17.0 in stage 1.0 (TID 145)
+java.lang.OutOfMemoryError: Java heap space
+	at java.io.ObjectInputStream$HandleTable.grow(ObjectInputStream.java:3779)
+	at java.io.ObjectInputStream$HandleTable.assign(ObjectInputStream.java:3585)
+	at java.io.ObjectInputStream.readString(ObjectInputStream.java:1860)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1526)
+	at java.io.ObjectInputStream.readArray(ObjectInputStream.java:1919)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1529)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2231)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2231)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:75)
+	at org.apache.spark.serializer.DeserializationStream.readValue(Serializer.scala:159)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$DiskMapIterator.readNextItem(ExternalAppendOnlyMap.scala:632)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$DiskMapIterator.hasNext(ExternalAppendOnlyMap.scala:672)
+	at scala.collection.Iterator$$anon$1.hasNext(Iterator.scala:1004)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator.org$apache$spark$util$collection$ExternalAppendOnlyMap$ExternalIterator$$readNextHashCode(ExternalAppendOnlyMap.scala:393)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator$$anonfun$next$5.apply(ExternalAppendOnlyMap.scala:486)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator$$anonfun$next$5.apply(ExternalAppendOnlyMap.scala:484)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator.next(ExternalAppendOnlyMap.scala:484)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator.next(ExternalAppendOnlyMap.scala:356)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$saveAsHadoopDataset$1$$anonfun$13$$anonfun$apply$7.apply$mcV$sp(PairRDDFunctions.scala:1253)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$saveAsHadoopDataset$1$$anonfun$13$$anonfun$apply$7.apply(PairRDDFunctions.scala:1249)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$saveAsHadoopDataset$1$$anonfun$13$$anonfun$apply$7.apply(PairRDDFunctions.scala:1249)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1341)
+17/10/11 20:53:26 ERROR SparkUncaughtExceptionHandler: Uncaught exception in thread Thread[Executor task launch worker for task 145,5,main]
+java.lang.OutOfMemoryError: Java heap space
+	at java.io.ObjectInputStream$HandleTable.grow(ObjectInputStream.java:3779)
+	at java.io.ObjectInputStream$HandleTable.assign(ObjectInputStream.java:3585)
+	at java.io.ObjectInputStream.readString(ObjectInputStream.java:1860)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1526)
+	at java.io.ObjectInputStream.readArray(ObjectInputStream.java:1919)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1529)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2231)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2231)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:75)
+	at org.apache.spark.serializer.DeserializationStream.readValue(Serializer.scala:159)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$DiskMapIterator.readNextItem(ExternalAppendOnlyMap.scala:632)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$DiskMapIterator.hasNext(ExternalAppendOnlyMap.scala:672)
+	at scala.collection.Iterator$$anon$1.hasNext(Iterator.scala:1004)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator.org$apache$spark$util$collection$ExternalAppendOnlyMap$ExternalIterator$$readNextHashCode(ExternalAppendOnlyMap.scala:393)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator$$anonfun$next$5.apply(ExternalAppendOnlyMap.scala:486)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator$$anonfun$next$5.apply(ExternalAppendOnlyMap.scala:484)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator.next(ExternalAppendOnlyMap.scala:484)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap$ExternalIterator.next(ExternalAppendOnlyMap.scala:356)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:409)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$saveAsHadoopDataset$1$$anonfun$13$$anonfun$apply$7.apply$mcV$sp(PairRDDFunctions.scala:1253)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$saveAsHadoopDataset$1$$anonfun$13$$anonfun$apply$7.apply(PairRDDFunctions.scala:1249)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$saveAsHadoopDataset$1$$anonfun$13$$anonfun$apply$7.apply(PairRDDFunctions.scala:1249)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1341)
+17/10/11 20:53:26 INFO DiskBlockManager: Shutdown hook called
+17/10/11 20:53:26 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+17/10/11 20:53:26 INFO CoarseGrainedExecutorBackend: Driver from 172.26.80.234:38
