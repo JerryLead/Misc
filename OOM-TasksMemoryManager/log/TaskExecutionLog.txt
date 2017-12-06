@@ -1,0 +1,887 @@
+17/12/05 11:41:10 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 16865@slave1
+17/12/05 11:41:10 INFO SignalUtils: Registered signal handler for TERM
+17/12/05 11:41:10 INFO SignalUtils: Registered signal handler for HUP
+17/12/05 11:41:10 INFO SignalUtils: Registered signal handler for INT
+17/12/05 11:41:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/12/05 11:41:11 INFO SecurityManager: Changing view acls to: root
+17/12/05 11:41:11 INFO SecurityManager: Changing modify acls to: root
+17/12/05 11:41:11 INFO SecurityManager: Changing view acls groups to: 
+17/12/05 11:41:11 INFO SecurityManager: Changing modify acls groups to: 
+17/12/05 11:41:11 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+17/12/05 11:41:11 INFO TransportClientFactory: Successfully created connection to /172.26.80.234:34263 after 59 ms (0 ms spent in bootstraps)
+17/12/05 11:41:11 INFO SecurityManager: Changing view acls to: root
+17/12/05 11:41:11 INFO SecurityManager: Changing modify acls to: root
+17/12/05 11:41:11 INFO SecurityManager: Changing view acls groups to: 
+17/12/05 11:41:11 INFO SecurityManager: Changing modify acls groups to: 
+17/12/05 11:41:11 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+17/12/05 11:41:11 INFO TransportClientFactory: Successfully created connection to /172.26.80.234:34263 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:41:11 INFO DiskBlockManager: Created local directory at /dataDisk/spark-2.1.4.19-bin-2.7.1/shuffletmp/spark-8a451b2c-ab4d-4fd9-846c-4387343e515a/executor-e2174977-e09b-4c21-af12-f495864ad98b/blockmgr-1b95a644-92cf-42f8-8a2d-0a9f7e5d12b1
+17/12/05 11:41:11 DEBUG DiskBlockManager: Adding shutdown hook
+17/12/05 11:41:11 INFO MemoryStore: MemoryStore started with capacity 3.3 GB
+17/12/05 11:41:12 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@172.26.80.234:34263
+17/12/05 11:41:12 INFO WorkerWatcher: Connecting to worker spark://Worker@172.26.80.229:7078
+17/12/05 11:41:12 INFO TransportClientFactory: Successfully created connection to /172.26.80.229:7078 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:41:12 INFO WorkerWatcher: Successfully connected to spark://Worker@172.26.80.229:7078
+17/12/05 11:41:12 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+17/12/05 11:41:12 INFO Executor: Starting executor ID 22 on host 172.26.80.229
+17/12/05 11:41:12 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40342.
+17/12/05 11:41:12 INFO NettyBlockTransferService: Server created on 172.26.80.229:40342
+17/12/05 11:41:12 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/12/05 11:41:12 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(22, 172.26.80.229, 40342, None)
+17/12/05 11:41:12 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(22, 172.26.80.229, 40342, None)
+17/12/05 11:41:12 INFO BlockManager: Initialized BlockManager: BlockManagerId(22, 172.26.80.229, 40342, None)
+17/12/05 11:41:14 INFO CoarseGrainedExecutorBackend: Got assigned task 28
+17/12/05 11:41:14 INFO Executor: Running task 28.0 in stage 0.0 (TID 28)
+17/12/05 11:41:14 INFO Executor: Fetching spark://172.26.80.234:34263/jars/SparkGC.jar with timestamp 1512445269097
+17/12/05 11:41:14 INFO TransportClientFactory: Successfully created connection to /172.26.80.234:34263 after 15 ms (0 ms spent in bootstraps)
+17/12/05 11:41:14 INFO Utils: Fetching spark://172.26.80.234:34263/jars/SparkGC.jar to /dataDisk/spark-2.1.4.19-bin-2.7.1/shuffletmp/spark-8a451b2c-ab4d-4fd9-846c-4387343e515a/executor-e2174977-e09b-4c21-af12-f495864ad98b/spark-90670a6e-4e5f-4140-b157-7b25c34cc5bd/fetchFileTemp1972524076576873323.tmp
+17/12/05 11:41:14 INFO Utils: Copying /dataDisk/spark-2.1.4.19-bin-2.7.1/shuffletmp/spark-8a451b2c-ab4d-4fd9-846c-4387343e515a/executor-e2174977-e09b-4c21-af12-f495864ad98b/spark-90670a6e-4e5f-4140-b157-7b25c34cc5bd/-15067902701512445269097_cache to /dataDisk/spark-2.1.4.19-bin-2.7.1/worker/app-20171205114109-0000/22/./SparkGC.jar
+17/12/05 11:41:14 INFO Executor: Adding file:/dataDisk/spark-2.1.4.19-bin-2.7.1/worker/app-20171205114109-0000/22/./SparkGC.jar to class loader
+17/12/05 11:41:14 DEBUG BlockManager: Getting local block broadcast_1
+17/12/05 11:41:14 DEBUG BlockManager: Block broadcast_1 was not found
+17/12/05 11:41:14 INFO TorrentBroadcast: Started reading broadcast variable 1
+17/12/05 11:41:14 DEBUG BlockManager: Getting local block broadcast_1_piece0 as bytes
+17/12/05 11:41:14 DEBUG BlockManager: Getting remote block broadcast_1_piece0
+17/12/05 11:41:14 DEBUG BlockManager: Getting remote block broadcast_1_piece0 from BlockManagerId(driver, 172.26.80.234, 36781, None)
+17/12/05 11:41:14 INFO TransportClientFactory: Successfully created connection to /172.26.80.234:36781 after 2 ms (0 ms spent in bootstraps)
+17/12/05 11:41:14 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.0 KB, free 3.3 GB)
+17/12/05 11:41:14 DEBUG BlockManagerMaster: Updated info of block broadcast_1_piece0
+17/12/05 11:41:14 DEBUG BlockManager: Told master about block broadcast_1_piece0
+17/12/05 11:41:14 DEBUG BlockManager: Put block broadcast_1_piece0 locally took  10 ms
+17/12/05 11:41:14 DEBUG BlockManager: Putting block broadcast_1_piece0 without replication took  11 ms
+17/12/05 11:41:14 INFO TorrentBroadcast: Reading broadcast variable 1 took 143 ms
+17/12/05 11:41:14 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 11.4 KB, free 3.3 GB)
+17/12/05 11:41:14 DEBUG BlockManager: Put block broadcast_1 locally took  96 ms
+17/12/05 11:41:14 DEBUG BlockManager: Putting block broadcast_1 without replication took  96 ms
+17/12/05 11:41:15 INFO CodeGenerator: Code generated in 324.6942 ms
+17/12/05 11:41:15 INFO CodeGenerator: Code generated in 14.350576 ms
+17/12/05 11:41:15 INFO FileScanRDD: Reading File path: hdfs://master:9000/usr/yxt/twitter_rv.txt, range: 3758096384-3892314112, partition values: [empty row]
+17/12/05 11:41:15 INFO CodeGenerator: Code generated in 14.933415 ms
+17/12/05 11:41:15 DEBUG BlockManager: Getting local block broadcast_0
+17/12/05 11:41:15 DEBUG BlockManager: Block broadcast_0 was not found
+17/12/05 11:41:15 INFO TorrentBroadcast: Started reading broadcast variable 0
+17/12/05 11:41:15 DEBUG BlockManager: Getting local block broadcast_0_piece0 as bytes
+17/12/05 11:41:15 DEBUG BlockManager: Getting remote block broadcast_0_piece0
+17/12/05 11:41:15 DEBUG BlockManager: Getting remote block broadcast_0_piece0 from BlockManagerId(18, 172.26.80.233, 44593, None)
+17/12/05 11:41:15 INFO TransportClientFactory: Successfully created connection to /172.26.80.233:44593 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:41:15 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.9 KB, free 3.3 GB)
+17/12/05 11:41:15 DEBUG BlockManagerMaster: Updated info of block broadcast_0_piece0
+17/12/05 11:41:15 DEBUG BlockManager: Told master about block broadcast_0_piece0
+17/12/05 11:41:15 DEBUG BlockManager: Put block broadcast_0_piece0 locally took  4 ms
+17/12/05 11:41:15 DEBUG BlockManager: Putting block broadcast_0_piece0 without replication took  4 ms
+17/12/05 11:41:15 INFO TorrentBroadcast: Reading broadcast variable 0 took 41 ms
+17/12/05 11:41:15 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 329.6 KB, free 3.3 GB)
+17/12/05 11:41:15 DEBUG BlockManager: Put block broadcast_0 locally took  44 ms
+17/12/05 11:41:15 DEBUG BlockManager: Putting block broadcast_0 without replication took  45 ms
+17/12/05 11:41:30 INFO Executor: Finished task 28.0 in stage 0.0 (TID 28). 2823 bytes result sent to driver
+17/12/05 11:41:30 INFO CoarseGrainedExecutorBackend: Got assigned task 51
+17/12/05 11:41:30 INFO Executor: Running task 51.0 in stage 0.0 (TID 51)
+17/12/05 11:41:30 DEBUG BlockManager: Getting local block broadcast_1
+17/12/05 11:41:30 DEBUG BlockManager: Level for block broadcast_1 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:41:30 INFO FileScanRDD: Reading File path: hdfs://master:9000/usr/yxt/twitter_rv.txt, range: 6845104128-6979321856, partition values: [empty row]
+17/12/05 11:41:30 DEBUG BlockManager: Getting local block broadcast_0
+17/12/05 11:41:30 DEBUG BlockManager: Level for block broadcast_0 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:41:42 INFO Executor: Finished task 51.0 in stage 0.0 (TID 51). 1910 bytes result sent to driver
+17/12/05 11:41:42 INFO CoarseGrainedExecutorBackend: Got assigned task 75
+17/12/05 11:41:42 INFO Executor: Running task 75.0 in stage 0.0 (TID 75)
+17/12/05 11:41:42 DEBUG BlockManager: Getting local block broadcast_1
+17/12/05 11:41:42 DEBUG BlockManager: Level for block broadcast_1 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:41:42 INFO FileScanRDD: Reading File path: hdfs://master:9000/usr/yxt/twitter_rv.txt, range: 10066329600-10200547328, partition values: [empty row]
+17/12/05 11:41:42 DEBUG BlockManager: Getting local block broadcast_0
+17/12/05 11:41:42 DEBUG BlockManager: Level for block broadcast_0 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:41:54 INFO Executor: Finished task 75.0 in stage 0.0 (TID 75). 1910 bytes result sent to driver
+17/12/05 11:41:54 INFO CoarseGrainedExecutorBackend: Got assigned task 103
+17/12/05 11:41:54 INFO Executor: Running task 103.0 in stage 0.0 (TID 103)
+17/12/05 11:41:54 DEBUG BlockManager: Getting local block broadcast_1
+17/12/05 11:41:54 DEBUG BlockManager: Level for block broadcast_1 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:41:54 INFO FileScanRDD: Reading File path: hdfs://master:9000/usr/yxt/twitter_rv.txt, range: 13824425984-13958643712, partition values: [empty row]
+17/12/05 11:41:54 DEBUG BlockManager: Getting local block broadcast_0
+17/12/05 11:41:54 DEBUG BlockManager: Level for block broadcast_0 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:42:07 INFO Executor: Finished task 103.0 in stage 0.0 (TID 103). 1910 bytes result sent to driver
+17/12/05 11:42:07 INFO CoarseGrainedExecutorBackend: Got assigned task 136
+17/12/05 11:42:07 INFO Executor: Running task 136.0 in stage 0.0 (TID 136)
+17/12/05 11:42:07 DEBUG BlockManager: Getting local block broadcast_1
+17/12/05 11:42:07 DEBUG BlockManager: Level for block broadcast_1 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:42:07 INFO FileScanRDD: Reading File path: hdfs://master:9000/usr/yxt/twitter_rv.txt, range: 18253611008-18387828736, partition values: [empty row]
+17/12/05 11:42:07 DEBUG BlockManager: Getting local block broadcast_0
+17/12/05 11:42:07 DEBUG BlockManager: Level for block broadcast_0 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:42:19 INFO Executor: Finished task 136.0 in stage 0.0 (TID 136). 1910 bytes result sent to driver
+17/12/05 11:42:19 INFO CoarseGrainedExecutorBackend: Got assigned task 166
+17/12/05 11:42:19 INFO Executor: Running task 166.0 in stage 0.0 (TID 166)
+17/12/05 11:42:19 DEBUG BlockManager: Getting local block broadcast_1
+17/12/05 11:42:19 DEBUG BlockManager: Level for block broadcast_1 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:42:19 INFO FileScanRDD: Reading File path: hdfs://master:9000/usr/yxt/twitter_rv.txt, range: 22280142848-22414360576, partition values: [empty row]
+17/12/05 11:42:19 DEBUG BlockManager: Getting local block broadcast_0
+17/12/05 11:42:19 DEBUG BlockManager: Level for block broadcast_0 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/12/05 11:42:31 INFO Executor: Finished task 166.0 in stage 0.0 (TID 166). 1910 bytes result sent to driver
+17/12/05 11:42:43 INFO CoarseGrainedExecutorBackend: Got assigned task 223
+17/12/05 11:42:43 INFO Executor: Running task 28.0 in stage 1.0 (TID 223)
+17/12/05 11:42:43 INFO MapOutputTrackerWorker: Updating epoch to 1 and clearing cache
+17/12/05 11:42:43 DEBUG BlockManager: Getting local block broadcast_2
+17/12/05 11:42:43 DEBUG BlockManager: Block broadcast_2 was not found
+17/12/05 11:42:43 INFO TorrentBroadcast: Started reading broadcast variable 2
+17/12/05 11:42:43 DEBUG BlockManager: Getting local block broadcast_2_piece0 as bytes
+17/12/05 11:42:43 DEBUG BlockManager: Getting remote block broadcast_2_piece0
+17/12/05 11:42:43 DEBUG BlockManager: Getting remote block broadcast_2_piece0 from BlockManagerId(3, 172.26.80.230, 43571, None)
+17/12/05 11:42:43 INFO TransportClientFactory: Successfully created connection to /172.26.80.230:43571 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:42:43 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.8 KB, free 3.3 GB)
+17/12/05 11:42:43 DEBUG BlockManagerMaster: Updated info of block broadcast_2_piece0
+17/12/05 11:42:43 DEBUG BlockManager: Told master about block broadcast_2_piece0
+17/12/05 11:42:43 DEBUG BlockManager: Put block broadcast_2_piece0 locally took  3 ms
+17/12/05 11:42:43 DEBUG BlockManager: Putting block broadcast_2_piece0 without replication took  3 ms
+17/12/05 11:42:43 INFO TorrentBroadcast: Reading broadcast variable 2 took 36 ms
+17/12/05 11:42:43 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 13.7 KB, free 3.3 GB)
+17/12/05 11:42:43 DEBUG BlockManager: Put block broadcast_2 locally took  1 ms
+17/12/05 11:42:43 DEBUG BlockManager: Putting block broadcast_2 without replication took  1 ms
+17/12/05 11:42:43 DEBUG BlockManager: Getting local block rdd_5_28
+17/12/05 11:42:43 DEBUG BlockManager: Block rdd_5_28 was not found
+17/12/05 11:42:43 DEBUG BlockManager: Getting remote block rdd_5_28
+17/12/05 11:42:43 DEBUG BlockManager: Block rdd_5_28 not found
+17/12/05 11:42:43 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 2, fetching them
+17/12/05 11:42:43 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@172.26.80.234:34263)
+17/12/05 11:42:43 INFO MapOutputTrackerWorker: Got the output locations
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: maxBytesInFlight: 50331648, targetRequestSize: 10066329
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 19394976 at BlockManagerId(12, 172.26.80.237, 46491, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 13353416 at BlockManagerId(0, 172.26.80.230, 33913, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10237619 at BlockManagerId(14, 172.26.80.237, 37665, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11842825 at BlockManagerId(30, 172.26.80.235, 43572, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12527904 at BlockManagerId(26, 172.26.80.231, 33955, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11320396 at BlockManagerId(25, 172.26.80.231, 46234, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11401872 at BlockManagerId(19, 172.26.80.233, 38707, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10621037 at BlockManagerId(23, 172.26.80.229, 45509, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10659084 at BlockManagerId(31, 172.26.80.235, 38813, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10491298 at BlockManagerId(9, 172.26.80.232, 42730, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10524667 at BlockManagerId(2, 172.26.80.230, 46019, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12653138 at BlockManagerId(11, 172.26.80.232, 40738, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10207692 at BlockManagerId(1, 172.26.80.230, 43964, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11885363 at BlockManagerId(15, 172.26.80.237, 38771, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10325651 at BlockManagerId(18, 172.26.80.233, 44593, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11757470 at BlockManagerId(18, 172.26.80.233, 44593, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11998303 at BlockManagerId(27, 172.26.80.231, 36975, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10985324 at BlockManagerId(20, 172.26.80.229, 45660, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11666745 at BlockManagerId(16, 172.26.80.233, 37678, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11648714 at BlockManagerId(29, 172.26.80.235, 38783, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11508446 at BlockManagerId(5, 172.26.80.236, 40290, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12393939 at BlockManagerId(4, 172.26.80.236, 35068, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10984682 at BlockManagerId(7, 172.26.80.236, 37197, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10847390 at BlockManagerId(10, 172.26.80.232, 39786, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12362974 at BlockManagerId(6, 172.26.80.236, 36041, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10973919 at BlockManagerId(21, 172.26.80.229, 42186, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11283576 at BlockManagerId(8, 172.26.80.232, 42787, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10194673 at BlockManagerId(13, 172.26.80.237, 35444, None)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12042785 at BlockManagerId(28, 172.26.80.235, 45296, None)
+17/12/05 11:42:43 INFO ShuffleBlockFetcherIterator: Getting 195 non-empty blocks out of 195 blocks
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Sending request for 1 blocks (3.6 MB) from 172.26.80.236:35068
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 96 MB, total = 96 MB
+17/12/05 11:42:43 INFO TransportClientFactory: Successfully created connection to /172.26.80.236:35068 after 17 ms (0 ms spent in bootstraps)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (9.0 MB) from 172.26.80.230:43571
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 96 MB, total = 96 MB
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (11.5 MB) from 172.26.80.235:45296
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 96 MB, total = 96 MB
+17/12/05 11:42:43 INFO TransportClientFactory: Successfully created connection to /172.26.80.235:45296 after 7 ms (0 ms spent in bootstraps)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Sending request for 1 blocks (2.5 MB) from 172.26.80.237:35444
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 96 MB, total = 96 MB
+17/12/05 11:42:43 INFO TransportClientFactory: Successfully created connection to /172.26.80.237:35444 after 6 ms (0 ms spent in bootstraps)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (8.5 MB) from 172.26.80.233:45079
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 96 MB, total = 96 MB
+17/12/05 11:42:43 INFO TransportClientFactory: Successfully created connection to /172.26.80.233:45079 after 7 ms (0 ms spent in bootstraps)
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: Sending request for 5 blocks (10.2 MB) from 172.26.80.235:38813
+17/12/05 11:42:43 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 96 MB, total = 96 MB
+17/12/05 11:42:44 INFO TransportClientFactory: Successfully created connection to /172.26.80.235:38813 after 22 ms (0 ms spent in bootstraps)
+17/12/05 11:42:44 INFO ShuffleBlockFetcherIterator: Started 6 remote fetches in 97 ms
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: Got local blocks in  99 ms
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_57_28, shuffle_2_117_28, shuffle_2_92_28, shuffle_2_180_28, shuffle_2_153_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_53_28, shuffle_2_150_28, shuffle_2_70_28, shuffle_2_120_28, shuffle_2_182_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_81_28, shuffle_2_104_28, shuffle_2_134_28, shuffle_2_164_28, shuffle_2_44_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_81_28, shuffle_2_104_28, shuffle_2_134_28, shuffle_2_164_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_150_28, shuffle_2_70_28, shuffle_2_120_28, shuffle_2_182_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_150_28, shuffle_2_120_28, shuffle_2_182_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_150_28, shuffle_2_182_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_165_28, shuffle_2_128_28, shuffle_2_58_28, shuffle_2_88_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_104_28, shuffle_2_134_28, shuffle_2_164_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_182_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_117_28, shuffle_2_92_28, shuffle_2_180_28, shuffle_2_153_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_134_28, shuffle_2_164_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_165_28, shuffle_2_128_28, shuffle_2_88_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_117_28, shuffle_2_180_28, shuffle_2_153_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_164_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_180_28, shuffle_2_153_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_180_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_165_28, shuffle_2_128_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_165_28)
+17/12/05 11:42:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:45 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 114976, inMemRecordsNum = 1451, currentMemory = 5.0 MB, myMemoryThreshold = 5.0 MB
+17/12/05 11:42:45 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:45 DEBUG TaskMemoryManager: [Require] Task 223 required 5.1 MB and got 5.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:45 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 5.1 MB (currentMem = 5.1 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:45 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 561376, inMemRecordsNum = 5737, currentMemory = 10.5 MB, myMemoryThreshold = 10.1 MB
+17/12/05 11:42:45 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:45 DEBUG TaskMemoryManager: [Require] Task 223 required 11.0 MB and got 11.0 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:45 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 11.0 MB (currentMem = 16.1 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:45 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 1041504, inMemRecordsNum = 23504, currentMemory = 21.1 MB, myMemoryThreshold = 21.1 MB
+17/12/05 11:42:45 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:45 DEBUG TaskMemoryManager: [Require] Task 223 required 21.1 MB and got 21.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:45 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 21.1 MB (currentMem = 37.2 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:45 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:42:45 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 1750720, inMemRecordsNum = 61573, currentMemory = 42.2 MB, myMemoryThreshold = 42.2 MB
+17/12/05 11:42:45 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:45 DEBUG TaskMemoryManager: [Require] Task 223 required 42.2 MB and got 42.2 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:45 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 42.2 MB (currentMem = 79.5 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (9.7 MB) from 172.26.80.230:43964
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:46 INFO TransportClientFactory: Successfully created connection to /172.26.80.230:43964 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28, shuffle_2_61_28, shuffle_2_156_28, shuffle_2_90_28, shuffle_2_124_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28, shuffle_2_156_28, shuffle_2_90_28, shuffle_2_124_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28, shuffle_2_156_28, shuffle_2_124_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28, shuffle_2_156_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:42:46 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 2817280, inMemRecordsNum = 91754, currentMemory = 162.9 MB, myMemoryThreshold = 84.5 MB
+17/12/05 11:42:46 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:46 DEBUG TaskMemoryManager: [Require] Task 223 required 241.4 MB and got 241.4 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:46 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 241.4 MB (currentMem = 320.8 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (11.0 MB) from 172.26.80.236:40290
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:46 INFO TransportClientFactory: Successfully created connection to /172.26.80.236:40290 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_93_28, shuffle_2_181_28, shuffle_2_119_28, shuffle_2_147_28, shuffle_2_37_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_93_28, shuffle_2_181_28, shuffle_2_119_28, shuffle_2_147_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_181_28, shuffle_2_119_28, shuffle_2_147_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_181_28, shuffle_2_147_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_181_28)
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:46 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (9.7 MB) from 172.26.80.237:35444
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_97_28, shuffle_2_127_28, shuffle_2_157_28, shuffle_2_46_28, shuffle_2_67_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_97_28, shuffle_2_127_28, shuffle_2_157_28, shuffle_2_67_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_97_28, shuffle_2_127_28, shuffle_2_157_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_127_28, shuffle_2_157_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_157_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (11.3 MB) from 172.26.80.237:38771
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:47 INFO TransportClientFactory: Successfully created connection to /172.26.80.237:38771 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_47_28, shuffle_2_175_28, shuffle_2_78_28, shuffle_2_143_28, shuffle_2_116_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_175_28, shuffle_2_78_28, shuffle_2_143_28, shuffle_2_116_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_175_28, shuffle_2_143_28, shuffle_2_116_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_175_28, shuffle_2_143_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_175_28)
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:47 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:42:48 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 3
+17/12/05 11:42:54 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (18.5 MB) from 172.26.80.237:46491
+17/12/05 11:42:54 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:54 INFO TransportClientFactory: Successfully created connection to /172.26.80.237:46491 after 17 ms (0 ms spent in bootstraps)
+17/12/05 11:42:54 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_79_28, shuffle_2_42_28)
+17/12/05 11:42:54 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_79_28)
+17/12/05 11:42:54 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 3
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (12.7 MB) from 172.26.80.230:33913
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:55 INFO TransportClientFactory: Successfully created connection to /172.26.80.230:33913 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:42:55 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 10079520, inMemRecordsNum = 348118, currentMemory = 332.3 MB, myMemoryThreshold = 325.8 MB
+17/12/05 11:42:55 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:55 DEBUG TaskMemoryManager: [Require] Task 223 required 338.7 MB and got 338.7 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:55 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 338.7 MB (currentMem = 659.5 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 3
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: Sending request for 7 blocks (12.1 MB) from 172.26.80.232:40738
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:55 INFO TransportClientFactory: Successfully created connection to /172.26.80.232:40738 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_72_28, shuffle_2_41_28, shuffle_2_162_28, shuffle_2_99_28, shuffle_2_130_28)
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_72_28, shuffle_2_162_28, shuffle_2_99_28, shuffle_2_130_28)
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_162_28, shuffle_2_99_28, shuffle_2_130_28)
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_162_28, shuffle_2_130_28)
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_162_28)
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:55 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 3
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (10.5 MB) from 172.26.80.229:45660
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:56 INFO TransportClientFactory: Successfully created connection to /172.26.80.229:45660 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_62_28, shuffle_2_86_28)
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_86_28)
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 3
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (8.0 MB) from 172.26.80.237:46491
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_189_28, shuffle_2_159_28)
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_189_28)
+17/12/05 11:42:56 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (10.1 MB) from 172.26.80.229:45509
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:57 INFO TransportClientFactory: Successfully created connection to /172.26.80.229:45509 after 13 ms (0 ms spent in bootstraps)
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_76_28, shuffle_2_146_28, shuffle_2_102_28, shuffle_2_52_28, shuffle_2_178_28)
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_76_28, shuffle_2_146_28, shuffle_2_102_28, shuffle_2_178_28)
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_146_28, shuffle_2_102_28, shuffle_2_178_28)
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_146_28, shuffle_2_178_28)
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_178_28)
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (9.4 MB) from 172.26.80.231:46156
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:57 INFO TransportClientFactory: Successfully created connection to /172.26.80.231:46156 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: Sending request for 2 blocks (3.9 MB) from 172.26.80.230:46019
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:42:57 INFO TransportClientFactory: Successfully created connection to /172.26.80.230:46019 after 3 ms (0 ms spent in bootstraps)
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_179_28)
+17/12/05 11:42:57 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:12 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:43:13 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:13 DEBUG ShuffleBlockFetcherIterator: Sending request for 5 blocks (10.5 MB) from 172.26.80.236:37197
+17/12/05 11:43:13 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:13 INFO TransportClientFactory: Successfully created connection to /172.26.80.236:37197 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:43:14 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (8.9 MB) from 172.26.80.233:37678
+17/12/05 11:43:14 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:43:14 INFO TransportClientFactory: Successfully created connection to /172.26.80.233:37678 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:43:14 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:43:14 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_39_28, shuffle_2_139_28, shuffle_2_89_28, shuffle_2_112_28)
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_139_28, shuffle_2_89_28, shuffle_2_112_28)
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_139_28, shuffle_2_112_28)
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_139_28)
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: Sending request for 4 blocks (11.3 MB) from 172.26.80.235:43572
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 112 MB, total = 112 MB
+17/12/05 11:43:22 INFO TransportClientFactory: Successfully created connection to /172.26.80.235:43572 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_132_28, shuffle_2_98_28, shuffle_2_63_28)
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_132_28, shuffle_2_98_28)
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_132_28)
+17/12/05 11:43:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:23 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:23 DEBUG ShuffleBlockFetcherIterator: Sending request for 2 blocks (5.3 MB) from 172.26.80.232:39786
+17/12/05 11:43:23 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:43:23 INFO TransportClientFactory: Successfully created connection to /172.26.80.232:39786 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:43:23 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:23 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (10.0 MB) from 172.26.80.232:42730
+17/12/05 11:43:23 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:43:23 INFO TransportClientFactory: Successfully created connection to /172.26.80.232:42730 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:43:23 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_163_28, shuffle_2_193_28)
+17/12/05 11:43:23 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_193_28)
+17/12/05 11:43:23 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:24 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:24 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (10.5 MB) from 172.26.80.229:42186
+17/12/05 11:43:24 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:43:24 INFO TransportClientFactory: Successfully created connection to /172.26.80.229:42186 after 1 ms (0 ms spent in bootstraps)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_141_28, shuffle_2_109_28, shuffle_2_69_28, shuffle_2_169_28, shuffle_2_54_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_141_28, shuffle_2_109_28, shuffle_2_69_28, shuffle_2_169_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28, shuffle_2_96_28, shuffle_2_122_28, shuffle_2_64_28, shuffle_2_33_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28, shuffle_2_96_28, shuffle_2_122_28, shuffle_2_64_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28, shuffle_2_96_28, shuffle_2_122_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28, shuffle_2_122_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_141_28, shuffle_2_109_28, shuffle_2_169_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_185_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_141_28, shuffle_2_169_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_169_28)
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: Sending request for 4 blocks (9.8 MB) from 172.26.80.233:44593
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:43:30 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:43:31 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 26395712, inMemRecordsNum = 734006, currentMemory = 908.8 MB, myMemoryThreshold = 664.5 MB
+17/12/05 11:43:31 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:43:31 DEBUG TaskMemoryManager: [Require] Task 223 required 1153.1 MB and got 1153.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:43:31 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 1153.1 MB (currentMem = 1812.6 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_191_28, shuffle_2_125_28, shuffle_2_68_28, shuffle_2_45_28, shuffle_2_158_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28, shuffle_2_71_28, shuffle_2_101_28, shuffle_2_135_28, shuffle_2_43_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_191_28, shuffle_2_125_28, shuffle_2_68_28, shuffle_2_158_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28, shuffle_2_71_28, shuffle_2_101_28, shuffle_2_135_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28, shuffle_2_101_28, shuffle_2_135_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28, shuffle_2_135_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_191_28, shuffle_2_125_28, shuffle_2_158_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_187_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_191_28, shuffle_2_158_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_191_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_83_28, shuffle_2_105_28, shuffle_2_34_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_83_28, shuffle_2_105_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (10.9 MB) from 172.26.80.233:38707
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:41 INFO TransportClientFactory: Successfully created connection to /172.26.80.233:38707 after 3 ms (0 ms spent in bootstraps)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_105_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_36_28, shuffle_2_66_28, shuffle_2_131_28, shuffle_2_100_28, shuffle_2_173_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_66_28, shuffle_2_131_28, shuffle_2_100_28, shuffle_2_173_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_131_28, shuffle_2_100_28, shuffle_2_173_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_131_28, shuffle_2_173_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_173_28)
+17/12/05 11:43:41 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:42 DEBUG ShuffleBlockFetcherIterator: Sending request for 4 blocks (10.0 MB) from 172.26.80.230:46019
+17/12/05 11:43:42 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 160 MB, total = 160 MB
+17/12/05 11:43:42 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:43:42 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:42 DEBUG ShuffleBlockFetcherIterator: Sending request for 4 blocks (11.1 MB) from 172.26.80.233:37678
+17/12/05 11:43:42 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 160 MB, total = 160 MB
+17/12/05 11:43:42 DEBUG ShuffleBlockFetcherIterator: Sending request for 1 blocks (3.0 MB) from 172.26.80.235:43572
+17/12/05 11:43:42 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 160 MB, total = 160 MB
+17/12/05 11:43:43 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:43:43 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:43 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (11.8 MB) from 172.26.80.236:36041
+17/12/05 11:43:43 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:43 INFO TransportClientFactory: Successfully created connection to /172.26.80.236:36041 after 3 ms (0 ms spent in bootstraps)
+17/12/05 11:43:43 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_35_28, shuffle_2_94_28)
+17/12/05 11:43:43 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_94_28)
+17/12/05 11:43:43 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:43 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:44 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:44 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (11.2 MB) from 172.26.80.233:44593
+17/12/05 11:43:44 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_194_28, shuffle_2_161_28)
+17/12/05 11:43:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_194_28)
+17/12/05 11:43:44 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (10.8 MB) from 172.26.80.232:42787
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:45 INFO TransportClientFactory: Successfully created connection to /172.26.80.232:42787 after 13 ms (0 ms spent in bootstraps)
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_176_28, shuffle_2_115_28, shuffle_2_149_28, shuffle_2_55_28, shuffle_2_73_28)
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_176_28, shuffle_2_115_28, shuffle_2_149_28, shuffle_2_73_28)
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_176_28, shuffle_2_115_28, shuffle_2_149_28)
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_176_28, shuffle_2_149_28)
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_176_28)
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:45 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:46 DEBUG ShuffleBlockFetcherIterator: Sending request for 5 blocks (11.8 MB) from 172.26.80.236:35068
+17/12/05 11:43:46 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_87_28, shuffle_2_110_28, shuffle_2_140_28, shuffle_2_38_28)
+17/12/05 11:43:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_87_28, shuffle_2_110_28, shuffle_2_140_28)
+17/12/05 11:43:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_110_28, shuffle_2_140_28)
+17/12/05 11:43:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_140_28)
+17/12/05 11:43:46 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:46 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (11.4 MB) from 172.26.80.231:36975
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:48 INFO TransportClientFactory: Successfully created connection to /172.26.80.231:36975 after 9 ms (0 ms spent in bootstraps)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_142_28, shuffle_2_106_28, shuffle_2_167_28, shuffle_2_40_28, shuffle_2_74_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_142_28, shuffle_2_106_28, shuffle_2_167_28, shuffle_2_74_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_142_28, shuffle_2_106_28, shuffle_2_167_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_142_28, shuffle_2_167_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_167_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (11.9 MB) from 172.26.80.231:33955
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:43:48 INFO TransportClientFactory: Successfully created connection to /172.26.80.231:33955 after 10 ms (0 ms spent in bootstraps)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_49_28, shuffle_2_77_28, shuffle_2_107_28, shuffle_2_177_28, shuffle_2_137_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_77_28, shuffle_2_107_28, shuffle_2_177_28, shuffle_2_137_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_107_28, shuffle_2_177_28, shuffle_2_137_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_177_28, shuffle_2_137_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_177_28)
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:48 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (8.3 MB) from 172.26.80.236:36041
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (7.2 MB) from 172.26.80.229:45660
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_184_28, shuffle_2_148_28)
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_184_28)
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (10.8 MB) from 172.26.80.231:46234
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:49 INFO TransportClientFactory: Successfully created connection to /172.26.80.231:46234 after 9 ms (0 ms spent in bootstraps)
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_60_28, shuffle_2_84_28)
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_84_28)
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_188_28, shuffle_2_160_28)
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_188_28)
+17/12/05 11:43:49 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:50 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:50 DEBUG ShuffleBlockFetcherIterator: Sending request for 5 blocks (11.1 MB) from 172.26.80.235:38783
+17/12/05 11:43:50 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:50 INFO TransportClientFactory: Successfully created connection to /172.26.80.235:38783 after 3 ms (0 ms spent in bootstraps)
+17/12/05 11:43:50 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_145_28, shuffle_2_59_28, shuffle_2_85_28, shuffle_2_118_28)
+17/12/05 11:43:50 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_145_28, shuffle_2_85_28, shuffle_2_118_28)
+17/12/05 11:43:50 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_145_28, shuffle_2_118_28)
+17/12/05 11:43:50 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_145_28)
+17/12/05 11:43:50 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:43:51 DEBUG ShuffleBlockFetcherIterator: Sending request for 2 blocks (3.9 MB) from 172.26.80.237:37665
+17/12/05 11:43:51 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:43:51 INFO TransportClientFactory: Successfully created connection to /172.26.80.237:37665 after 14 ms (0 ms spent in bootstraps)
+17/12/05 11:43:51 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:43:52 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:43:52 DEBUG ShuffleBlockFetcherIterator: Sending request for 4 blocks (9.8 MB) from 172.26.80.237:37665
+17/12/05 11:43:52 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_174_28)
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_91_28, shuffle_2_121_28, shuffle_2_50_28)
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_80_28, shuffle_2_114_28, shuffle_2_48_28)
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_91_28, shuffle_2_121_28)
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_80_28, shuffle_2_114_28)
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_121_28)
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_114_28)
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (8.1 MB) from 172.26.80.231:46234
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_152_28, shuffle_2_186_28)
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_186_28)
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:20 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 46231360, inMemRecordsNum = 1399638, currentMemory = 1817.6 MB, myMemoryThreshold = 1817.6 MB
+17/12/05 11:44:20 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:44:20 DEBUG TaskMemoryManager: [Require] Task 223 required 1817.6 MB and got 1556.9 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:44:20 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 1556.9 MB (currentMem = 3.3 GB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: Sending request for 1 blocks (3.3 MB) from 172.26.80.235:38783
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:44:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:21 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:44:21 DEBUG ShuffleBlockFetcherIterator: Sending request for 5 blocks (10.3 MB) from 172.26.80.232:39786
+17/12/05 11:44:21 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:44:21 DEBUG ShuffleBlockFetcherIterator: Sending request for 1 blocks (2.1 MB) from 172.26.80.236:37197
+17/12/05 11:44:21 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:44:22 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 6
+17/12/05 11:44:22 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:44:23 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:44:24 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 3
+17/12/05 11:44:27 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_32_28, shuffle_2_123_28, shuffle_2_65_28, shuffle_2_95_28)
+17/12/05 11:44:27 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_123_28, shuffle_2_65_28, shuffle_2_95_28)
+17/12/05 11:44:27 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_123_28, shuffle_2_95_28)
+17/12/05 11:44:27 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_123_28)
+17/12/05 11:44:27 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:28 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 2
+17/12/05 11:44:32 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_56_28, shuffle_2_108_28, shuffle_2_82_28)
+17/12/05 11:44:32 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_108_28, shuffle_2_82_28)
+17/12/05 11:44:32 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_108_28)
+17/12/05 11:44:32 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:32 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 1
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 0
+17/12/05 11:44:38 INFO UnifiedMemoryManager: Will not store rdd_5_28 as the required space (1048576 bytes) exceeds our memory limit (400764 bytes)
+17/12/05 11:44:38 WARN MemoryStore: Failed to reserve initial memory threshold of 1024.0 KB for computing block rdd_5_28 in memory.
+17/12/05 11:44:38 WARN MemoryStore: Not enough space to cache rdd_5_28 in memory! (computed 384.0 B so far)
+17/12/05 11:44:38 INFO MemoryStore: Memory use = 391.4 KB (blocks) + 0.0 B (scratch space shared across 0 tasks(s)) = 391.4 KB. Storage limit = 391.4 KB.
+17/12/05 11:44:38 WARN BlockManager: Block rdd_5_28 could not be removed as it was not found on disk or in memory
+17/12/05 11:44:38 WARN BlockManager: Putting block rdd_5_28 failed
+17/12/05 11:44:38 DEBUG BlockManager: Putting block rdd_5_28 without replication took  114811 ms
+17/12/05 11:44:38 DEBUG BlockManager: Getting local block rdd_5_28
+17/12/05 11:44:38 DEBUG BlockManager: Block rdd_5_28 was not found
+17/12/05 11:44:38 DEBUG BlockManager: Getting remote block rdd_5_28
+17/12/05 11:44:38 DEBUG BlockManager: Block rdd_5_28 not found
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: maxBytesInFlight: 50331648, targetRequestSize: 10066329
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 19394976 at BlockManagerId(12, 172.26.80.237, 46491, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 13353416 at BlockManagerId(0, 172.26.80.230, 33913, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10237619 at BlockManagerId(14, 172.26.80.237, 37665, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11842825 at BlockManagerId(30, 172.26.80.235, 43572, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12527904 at BlockManagerId(26, 172.26.80.231, 33955, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11320396 at BlockManagerId(25, 172.26.80.231, 46234, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11401872 at BlockManagerId(19, 172.26.80.233, 38707, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10621037 at BlockManagerId(23, 172.26.80.229, 45509, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10659084 at BlockManagerId(31, 172.26.80.235, 38813, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10491298 at BlockManagerId(9, 172.26.80.232, 42730, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10524667 at BlockManagerId(2, 172.26.80.230, 46019, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12653138 at BlockManagerId(11, 172.26.80.232, 40738, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10207692 at BlockManagerId(1, 172.26.80.230, 43964, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11885363 at BlockManagerId(15, 172.26.80.237, 38771, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10325651 at BlockManagerId(18, 172.26.80.233, 44593, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11757470 at BlockManagerId(18, 172.26.80.233, 44593, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11998303 at BlockManagerId(27, 172.26.80.231, 36975, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10985324 at BlockManagerId(20, 172.26.80.229, 45660, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11666745 at BlockManagerId(16, 172.26.80.233, 37678, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11648714 at BlockManagerId(29, 172.26.80.235, 38783, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11508446 at BlockManagerId(5, 172.26.80.236, 40290, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12393939 at BlockManagerId(4, 172.26.80.236, 35068, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10984682 at BlockManagerId(7, 172.26.80.236, 37197, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10847390 at BlockManagerId(10, 172.26.80.232, 39786, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12362974 at BlockManagerId(6, 172.26.80.236, 36041, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10973919 at BlockManagerId(21, 172.26.80.229, 42186, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 11283576 at BlockManagerId(8, 172.26.80.232, 42787, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 10194673 at BlockManagerId(13, 172.26.80.237, 35444, None)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Creating fetch request of 12042785 at BlockManagerId(28, 172.26.80.235, 45296, None)
+17/12/05 11:44:38 INFO ShuffleBlockFetcherIterator: Getting 195 non-empty blocks out of 195 blocks
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Sending request for 4 blocks (10.0 MB) from 172.26.80.230:46019
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (10.8 MB) from 172.26.80.231:46234
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (11.3 MB) from 172.26.80.237:38771
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Sending request for 1 blocks (3.6 MB) from 172.26.80.236:35068
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (8.0 MB) from 172.26.80.237:46491
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:44:38 INFO ShuffleBlockFetcherIterator: Started 5 remote fetches in 6 ms
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: Got local blocks in  6 ms
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_47_28, shuffle_2_175_28, shuffle_2_78_28, shuffle_2_143_28, shuffle_2_116_28)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_175_28, shuffle_2_78_28, shuffle_2_143_28, shuffle_2_116_28)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_189_28, shuffle_2_159_28)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_175_28, shuffle_2_143_28, shuffle_2_116_28)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_175_28, shuffle_2_143_28)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_189_28)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_175_28)
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:38 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:39 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 114976, inMemRecordsNum = 1451, currentMemory = 5.0 MB, myMemoryThreshold = 5.0 MB
+17/12/05 11:44:39 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 128 MB, total = 128 MB
+17/12/05 11:44:39 DEBUG TaskMemoryManager: [Require] Task 223 required 5.1 MB and got 0.0 B for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:44:39 INFO ExternalAppendOnlyMap: [Spill] Task 223 force spilling in-memory map to disk and it will release 3.3 GB memory
+17/12/05 11:44:39 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:50 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_60_28, shuffle_2_84_28)
+17/12/05 11:44:50 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_84_28)
+17/12/05 11:44:50 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:51 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_91_28, shuffle_2_121_28, shuffle_2_50_28)
+17/12/05 11:44:51 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_91_28, shuffle_2_121_28)
+17/12/05 11:44:51 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_121_28)
+17/12/05 11:44:51 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:44:52 DEBUG ExternalAppendOnlyMap: [SpillRecord] recordIndex = 10000/1000000, recordUnSerializedSize = 808.0 B, record = (String, CompactBuffer)
+17/12/05 11:44:52 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:44:59 DEBUG ExternalAppendOnlyMap: [DiskMapIterator] file = /dataDisk/spark-2.1.4.19-bin-2.7.1/shuffletmp/spark-8a451b2c-ab4d-4fd9-846c-4387343e515a/executor-e2174977-e09b-4c21-af12-f495864ad98b/blockmgr-1b95a644-92cf-42f8-8a2d-0a9f7e5d12b1/11/temp_local_0a1ac0bd-1525-4e83-ac9d-097adb579d9c, blockId = temp_local_0a1ac0bd-1525-4e83-ac9d-097adb579d9c, batchSizes = ArrayBuffer(2019400, 5612185, 2406302, 2240436, 2465071, 2728426, 2313364, 2558734, 2594785, 2244523, 2042728, 2004874, 2191316, 11504989, 2324437, 2214583, 3390962, 2540149, 2328304, 2317772, 2119917, 1976064, 2445593, 2193213, 2302041, 2209563, 2214506, 2250112, 2189853, 2322428, 2933726, 2871301, 2386376, 2295084, 2110045, 2806640, 2175579, 2077084, 2022251, 2027619, 2604520, 3408648, 2925669, 2368227, 2587868, 8598464, 2758196, 2351946, 2814187, 2349175, 7768222, 2093629, 2326846, 2433356, 2424671, 2139500, 2922149, 2646884, 2216553, 2605415, 2072885, 1985929, 2591179, 2504632, 2199574, 2137736, 2195057, 2295485, 2003062, 8480759, 2256670, 2319233, 2414375, 3069528, 3142714, 2120928, 2034361, 2345304, 2104352, 2183266, 2239167, 2050679, 2780899, 2159888, 2392537, 2279304, 2457602, 2336041, 2452569, 2082372, 2565517, 2411543, 1822130, 2414919, 2142351, 2312303, 2560671, 2160404, 2098459, 2131485, 3698341, 2173769, 2286465, 2290492, 2480160, 2243277, 2462043, 2113177, 2189979, 7541250, 2482250, 2309734, 2121250, 2445457, 2539941, 3141192, 2304694, 2277319, 2379808, 6367432, 2244767, 2549978, 4638231, 2343318, 2347357, 2396232, 2064865, 2228696, 1977256, 2155988, 2085675, 2299985, 2546538, 2071968, 2562764, 2986400, 2087025, 2181298, 2079060, 2199411, 2134303, 2093638, 2351121, 2255751, 2476373, 2221091, 2288668, 3294133, 2609704, 2022419, 2209904, 3118932, 2066369, 1932740, 2384864, 2532898, 2182520, 2178768, 2638869, 3412876, 2226342, 346384)
+17/12/05 11:44:59 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:44:59 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:44:59 INFO ExternalAppendOnlyMap: [Task 223 SpillMetrics] release = 3.3 GB, writeTime = 19 s, recordsWritten = 1611519, bytesWritten = 403.9 MB
+17/12/05 11:44:59 DEBUG TaskMemoryManager: [Release] Task 223 release 3.3 GB from org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f
+17/12/05 11:44:59 DEBUG TaskMemoryManager: Task 223 released 3.3 GB from org.apache.spark.util.collection.ExternalAppendOnlyMap@567f2b3f for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:44:59 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 5.1 MB (currentMem = 5.1 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:44:59 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 561376, inMemRecordsNum = 5737, currentMemory = 10.5 MB, myMemoryThreshold = 10.1 MB
+17/12/05 11:44:59 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:44:59 DEBUG TaskMemoryManager: [Require] Task 223 required 11.0 MB and got 11.0 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:44:59 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 11.0 MB (currentMem = 16.1 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:45:00 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 1041504, inMemRecordsNum = 23504, currentMemory = 21.1 MB, myMemoryThreshold = 21.1 MB
+17/12/05 11:45:00 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:45:00 DEBUG TaskMemoryManager: [Require] Task 223 required 21.1 MB and got 21.1 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:45:00 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 21.1 MB (currentMem = 37.2 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:45:00 DEBUG ShuffleBlockFetcherIterator: Sending request for 5 blocks (11.8 MB) from 172.26.80.236:35068
+17/12/05 11:45:00 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:45:00 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 2388160, inMemRecordsNum = 68820, currentMemory = 42.2 MB, myMemoryThreshold = 42.2 MB
+17/12/05 11:45:00 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:45:00 DEBUG TaskMemoryManager: [Require] Task 223 required 42.2 MB and got 42.2 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:45:00 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 42.2 MB (currentMem = 79.4 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:45:00 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 2880832, inMemRecordsNum = 91754, currentMemory = 139.4 MB, myMemoryThreshold = 84.4 MB
+17/12/05 11:45:00 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:45:00 DEBUG TaskMemoryManager: [Require] Task 223 required 194.3 MB and got 194.3 MB for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:45:00 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 194.3 MB (currentMem = 273.7 MB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:45:00 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:45:00 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 3
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: Sending request for 7 blocks (12.1 MB) from 172.26.80.232:40738
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28, shuffle_2_96_28, shuffle_2_122_28, shuffle_2_64_28, shuffle_2_33_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28, shuffle_2_96_28, shuffle_2_122_28, shuffle_2_64_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28, shuffle_2_96_28, shuffle_2_122_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28, shuffle_2_122_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_155_28, shuffle_2_185_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_185_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_87_28, shuffle_2_110_28, shuffle_2_140_28, shuffle_2_38_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_87_28, shuffle_2_110_28, shuffle_2_140_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_110_28, shuffle_2_140_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_140_28)
+17/12/05 11:45:01 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: Sending request for 4 blocks (11.1 MB) from 172.26.80.233:37678
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_56_28, shuffle_2_108_28, shuffle_2_82_28)
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_108_28, shuffle_2_82_28)
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_108_28)
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (9.0 MB) from 172.26.80.230:43571
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 160 MB, total = 160 MB
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_53_28, shuffle_2_150_28, shuffle_2_70_28, shuffle_2_120_28, shuffle_2_182_28)
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_150_28, shuffle_2_70_28, shuffle_2_120_28, shuffle_2_182_28)
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_150_28, shuffle_2_120_28, shuffle_2_182_28)
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_150_28, shuffle_2_182_28)
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_182_28)
+17/12/05 11:45:02 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: Sending request for 4 blocks (11.3 MB) from 172.26.80.235:43572
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 176 MB, total = 176 MB
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_132_28, shuffle_2_98_28, shuffle_2_63_28)
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_132_28, shuffle_2_98_28)
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_132_28)
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (9.7 MB) from 172.26.80.230:43964
+17/12/05 11:45:03 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 192 MB, total = 192 MB
+17/12/05 11:45:04 DEBUG ShuffleBlockFetcherIterator: Sending request for 1 blocks (3.3 MB) from 172.26.80.235:38783
+17/12/05 11:45:04 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 192 MB, total = 192 MB
+17/12/05 11:45:04 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:04 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:45:05 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:05 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (18.5 MB) from 172.26.80.237:46491
+17/12/05 11:45:05 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 192 MB, total = 192 MB
+17/12/05 11:45:05 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_79_28, shuffle_2_42_28)
+17/12/05 11:45:05 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_79_28)
+17/12/05 11:45:05 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:05 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (10.0 MB) from 172.26.80.232:42730
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 192 MB, total = 192 MB
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_141_28, shuffle_2_109_28, shuffle_2_69_28, shuffle_2_169_28, shuffle_2_54_28)
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_141_28, shuffle_2_109_28, shuffle_2_69_28, shuffle_2_169_28)
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_141_28, shuffle_2_109_28, shuffle_2_169_28)
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_141_28, shuffle_2_169_28)
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_169_28)
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: Sending request for 1 blocks (2.5 MB) from 172.26.80.237:35444
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 192 MB, total = 192 MB
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:06 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:06 DEBUG ExternalAppendOnlyMap: [SpillCheck] recordsRead = 14549312, inMemRecordsNum = 367006, currentMemory = 1236.6 MB, myMemoryThreshold = 278.7 MB
+17/12/05 11:45:06 DEBUG ExternalAppendOnlyMap: [DirectBufferPool] used = 192 MB, total = 192 MB
+17/12/05 11:45:06 DEBUG TaskMemoryManager: [Require] Task 223 required 2.1 GB and got 2.1 GB for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:45:06 DEBUG TaskMemoryManager: [Acquired] Task 223 finally acquired 2.1 GB (currentMem = 2.4 GB) for org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28, shuffle_2_61_28, shuffle_2_156_28, shuffle_2_90_28, shuffle_2_124_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28, shuffle_2_156_28, shuffle_2_90_28, shuffle_2_124_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28, shuffle_2_156_28, shuffle_2_124_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28, shuffle_2_156_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_190_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (11.5 MB) from 172.26.80.235:45296
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 192 MB, total = 192 MB
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_81_28, shuffle_2_104_28, shuffle_2_134_28, shuffle_2_164_28, shuffle_2_44_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_81_28, shuffle_2_104_28, shuffle_2_134_28, shuffle_2_164_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_104_28, shuffle_2_134_28, shuffle_2_164_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_134_28, shuffle_2_164_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_164_28)
+17/12/05 11:45:20 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:21 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:21 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (10.1 MB) from 172.26.80.229:45509
+17/12/05 11:45:21 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 192 MB, total = 192 MB
+17/12/05 11:45:21 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_76_28, shuffle_2_146_28, shuffle_2_102_28, shuffle_2_52_28, shuffle_2_178_28)
+17/12/05 11:45:21 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_76_28, shuffle_2_146_28, shuffle_2_102_28, shuffle_2_178_28)
+17/12/05 11:45:21 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_146_28, shuffle_2_102_28, shuffle_2_178_28)
+17/12/05 11:45:21 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_146_28, shuffle_2_178_28)
+17/12/05 11:45:21 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_178_28)
+17/12/05 11:45:21 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (10.5 MB) from 172.26.80.229:42186
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 176 MB, total = 176 MB
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28, shuffle_2_71_28, shuffle_2_101_28, shuffle_2_135_28, shuffle_2_43_28)
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28, shuffle_2_71_28, shuffle_2_101_28, shuffle_2_135_28)
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28, shuffle_2_101_28, shuffle_2_135_28)
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28, shuffle_2_135_28)
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_172_28)
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:45:22 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:35 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (10.9 MB) from 172.26.80.233:38707
+17/12/05 11:45:35 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 176 MB, total = 176 MB
+17/12/05 11:45:35 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_36_28, shuffle_2_66_28, shuffle_2_131_28, shuffle_2_100_28, shuffle_2_173_28)
+17/12/05 11:45:35 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_66_28, shuffle_2_131_28, shuffle_2_100_28, shuffle_2_173_28)
+17/12/05 11:45:35 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_131_28, shuffle_2_100_28, shuffle_2_173_28)
+17/12/05 11:45:35 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_131_28, shuffle_2_173_28)
+17/12/05 11:45:35 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_173_28)
+17/12/05 11:45:35 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:36 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:36 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (7.2 MB) from 172.26.80.229:45660
+17/12/05 11:45:36 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 176 MB, total = 176 MB
+17/12/05 11:45:36 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:36 DEBUG ShuffleBlockFetcherIterator: Sending request for 6 blocks (11.4 MB) from 172.26.80.231:36975
+17/12/05 11:45:36 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_142_28, shuffle_2_106_28, shuffle_2_167_28, shuffle_2_40_28, shuffle_2_74_28)
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_142_28, shuffle_2_106_28, shuffle_2_167_28, shuffle_2_74_28)
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_142_28, shuffle_2_106_28, shuffle_2_167_28)
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_142_28, shuffle_2_167_28)
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_167_28)
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (10.5 MB) from 172.26.80.229:45660
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: Sending request for 5 blocks (11.1 MB) from 172.26.80.235:38783
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: Sending request for 1 blocks (2.1 MB) from 172.26.80.236:37197
+17/12/05 11:45:58 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:46:17 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:46:17 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_145_28, shuffle_2_59_28, shuffle_2_85_28, shuffle_2_118_28)
+17/12/05 11:46:17 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_145_28, shuffle_2_85_28, shuffle_2_118_28)
+17/12/05 11:46:17 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_145_28, shuffle_2_118_28)
+17/12/05 11:46:17 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_145_28)
+17/12/05 11:46:17 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:46:17 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:46:37 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_184_28, shuffle_2_148_28)
+17/12/05 11:46:37 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_184_28)
+17/12/05 11:46:37 DEBUG ShuffleBlockFetcherIterator: Sending request for 3 blocks (11.2 MB) from 172.26.80.233:44593
+17/12/05 11:46:37 DEBUG ShuffleBlockFetcherIterator: [DirectBufferPool] used = 144 MB, total = 144 MB
+17/12/05 11:46:37 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_194_28, shuffle_2_161_28)
+17/12/05 11:46:37 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_194_28)
+17/12/05 11:46:55 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:46:55 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:46:55 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_62_28, shuffle_2_86_28)
+17/12/05 11:46:55 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 5
+17/12/05 11:47:29 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set(shuffle_2_86_28)
+17/12/05 11:47:29 DEBUG ShuffleBlockFetcherIterator: remainingBlocks: Set()
+17/12/05 11:47:29 DEBUG ShuffleBlockFetcherIterator: Number of requests in flight 4
+17/12/05 11:49:43 WARN BlockManager: Putting block rdd_5_28 failed due to an exception
+17/12/05 11:49:43 WARN BlockManager: Block rdd_5_28 could not be removed as it was not found on disk or in memory
+17/12/05 11:49:43 DEBUG BlockManagerMaster: Updated info of block rdd_5_28
+17/12/05 11:49:43 DEBUG BlockManager: Told master about block rdd_5_28
+17/12/05 11:49:43 DEBUG TaskMemoryManager: unreleased 2.4 GB memory from org.apache.spark.util.collection.ExternalAppendOnlyMap@72499f7a
+17/12/05 11:49:43 ERROR Executor: Exception in task 28.0 in stage 1.0 (TID 223)
+java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.util.collection.AppendOnlyMap.growTable(AppendOnlyMap.scala:218)
+	at org.apache.spark.util.collection.SizeTrackingAppendOnlyMap.growTable(SizeTrackingAppendOnlyMap.scala:38)
+	at org.apache.spark.util.collection.AppendOnlyMap.incrementSize(AppendOnlyMap.scala:204)
+	at org.apache.spark.util.collection.AppendOnlyMap.changeValue(AppendOnlyMap.scala:147)
+	at org.apache.spark.util.collection.SizeTrackingAppendOnlyMap.changeValue(SizeTrackingAppendOnlyMap.scala:32)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap.insertAll(ExternalAppendOnlyMap.scala:192)
+	at org.apache.spark.Aggregator.combineValuesByKey(Aggregator.scala:41)
+	at org.apache.spark.shuffle.BlockStoreShuffleReader.read(BlockStoreShuffleReader.scala:91)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:109)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD$$anonfun$8.apply(RDD.scala:336)
+	at org.apache.spark.rdd.RDD$$anonfun$8.apply(RDD.scala:334)
+	at org.apache.spark.storage.BlockManager$$anonfun$doPutIterator$1.apply(BlockManager.scala:1005)
+	at org.apache.spark.storage.BlockManager$$anonfun$doPutIterator$1.apply(BlockManager.scala:996)
+	at org.apache.spark.storage.BlockManager.doPut(BlockManager.scala:936)
+	at org.apache.spark.storage.BlockManager.doPutIterator(BlockManager.scala:996)
+	at org.apache.spark.storage.BlockManager.getOrElseUpdate(BlockManager.scala:700)
+	at org.apache.spark.rdd.RDD.getOrCompute(RDD.scala:334)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:285)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.rdd.CoGroupedRDD$$anonfun$compute$2.apply(CoGroupedRDD.scala:141)
+	at org.apache.spark.rdd.CoGroupedRDD$$anonfun$compute$2.apply(CoGroupedRDD.scala:137)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at org.apache.spark.rdd.CoGroupedRDD.compute(CoGroupedRDD.scala:137)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+17/12/05 11:49:43 ERROR SparkUncaughtExceptionHandler: Uncaught exception in thread Thread[Executor task launch worker for task 223,5,main]
+java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.util.collection.AppendOnlyMap.growTable(AppendOnlyMap.scala:218)
+	at org.apache.spark.util.collection.SizeTrackingAppendOnlyMap.growTable(SizeTrackingAppendOnlyMap.scala:38)
+	at org.apache.spark.util.collection.AppendOnlyMap.incrementSize(AppendOnlyMap.scala:204)
+	at org.apache.spark.util.collection.AppendOnlyMap.changeValue(AppendOnlyMap.scala:147)
+	at org.apache.spark.util.collection.SizeTrackingAppendOnlyMap.changeValue(SizeTrackingAppendOnlyMap.scala:32)
+	at org.apache.spark.util.collection.ExternalAppendOnlyMap.insertAll(ExternalAppendOnlyMap.scala:192)
+	at org.apache.spark.Aggregator.combineValuesByKey(Aggregator.scala:41)
+	at org.apache.spark.shuffle.BlockStoreShuffleReader.read(BlockStoreShuffleReader.scala:91)
+	at org.apache.spark.rdd.ShuffledRDD.compute(ShuffledRDD.scala:109)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD$$anonfun$8.apply(RDD.scala:336)
+	at org.apache.spark.rdd.RDD$$anonfun$8.apply(RDD.scala:334)
+	at org.apache.spark.storage.BlockManager$$anonfun$doPutIterator$1.apply(BlockManager.scala:1005)
+	at org.apache.spark.storage.BlockManager$$anonfun$doPutIterator$1.apply(BlockManager.scala:996)
+	at org.apache.spark.storage.BlockManager.doPut(BlockManager.scala:936)
+	at org.apache.spark.storage.BlockManager.doPutIterator(BlockManager.scala:996)
+	at org.apache.spark.storage.BlockManager.getOrElseUpdate(BlockManager.scala:700)
+	at org.apache.spark.rdd.RDD.getOrCompute(RDD.scala:334)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:285)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.rdd.CoGroupedRDD$$anonfun$compute$2.apply(CoGroupedRDD.scala:141)
+	at org.apache.spark.rdd.CoGroupedRDD$$anonfun$compute$2.apply(CoGroupedRDD.scala:137)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at org.apache.spark.rdd.CoGroupedRDD.compute(CoGroupedRDD.scala:137)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+17/12/05 11:49:43 INFO DiskBlockManager: Shutdown hook called
